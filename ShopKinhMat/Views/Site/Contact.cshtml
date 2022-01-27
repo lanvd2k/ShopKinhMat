@@ -1,0 +1,112 @@
+﻿@model ShopBanDo.Models.modelContact
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+}
+<section class="bg0 p-t-104 p-b-116">
+    <div class="container">
+        <div class="flex-w flex-tr">
+            <div class="size-210 bor10 p-lr-70 p-t-55 p-b-70 p-lr-15-lg w-full-md">
+                @using (Html.BeginForm())
+                {
+
+                    @Html.ValidationSummary(true, "", new { @class = "mtext-105 cl2 txt-center p-b-30" })
+
+                    <h4 class="mtext-105 cl2 txt-center p-b-30">
+                        Nội dung liên hệ
+                    </h4>
+
+                    <div class="bor8 m-b-20 how-pos4-parent">
+                        <label>Tên</label>
+                        @Html.EditorFor(model => model.FullName, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.FullName, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="bor8 m-b-30">
+                        <label>SĐT</label>
+                        @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="bor8 m-b-30">
+                        <label>E-mail</label>
+                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="bor8 m-b-30">
+                        <label>Chủ đề</label>
+                        @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="bor8 m-b-30">
+                        <label>Nội dung</label>
+                        @Html.EditorFor(model => model.Detail, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Detail, "", new { @class = "text-danger" })
+                    </div>
+
+
+                    <button class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer" type="submit">
+                        Submit
+                    </button>
+                }
+            </div>
+
+
+            @*Map*@
+            <div class="size-210 bor10 flex-w flex-col-m p-lr-93 p-tb-30 p-lr-15-lg w-full-md">
+                <div class="flex-w w-full p-b-42">
+                    <span class="fs-18 cl5 txt-center size-211">
+                        <span class="lnr lnr-map-marker"></span>
+                    </span>
+
+                    <div class="size-212 p-t-2">
+                        <span class="mtext-110 cl2">
+                            Địa chỉ
+                        </span>
+
+                        <p class="stext-115 cl6 size-213 p-t-18">
+                            40 Tăng nhơn phú - P.Tăng Nhơn Phú B - Thành phố Thủ Đức - Thành phố Hồ Chí Minh
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex-w w-full p-b-42">
+                    <span class="fs-18 cl5 txt-center size-211">
+                        <span class="lnr lnr-phone-handset"></span>
+                    </span>
+
+                    <div class="size-212 p-t-2">
+                        <span class="mtext-110 cl2">
+                           Số điện thoại
+                        </span>
+
+                        <p class="stext-115 cl1 size-213 p-t-18">
+                            0364.242.261
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex-w w-full">
+                    <span class="fs-18 cl5 txt-center size-211">
+                        <span class="lnr lnr-envelope"></span>
+                    </span>
+
+                    <div class="size-212 p-t-2">
+                        <span class="mtext-110 cl2">
+                           Email hỗ trợ
+                        </span>
+
+                        <p class="stext-115 cl1 size-213 p-t-18">
+                            legialai98.hitu@gmail.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.784169858382!2d106.76934711410549!3d10.827822361205396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317526ffee66e4ab%3A0x196b5e5afd8c0221!2zNDAsIDUzIMSQxrDhu51uZyBUxINuZyBOaMahbiBQaMO6LCBQaMaw4bubYyBMb25nIEIsIFF14bqtbiA5LCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1610770078396!5m2!1svi!2s" width="1300" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+

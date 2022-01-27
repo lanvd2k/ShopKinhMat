@@ -1,0 +1,17 @@
+﻿@model IEnumerable<ShopBanDo.Models.modelSlider>
+<section class="section-slide">
+    <div class="wrap-slick1">
+        <div class="slick1">
+            @foreach (var row in Model)
+            {
+                <div >
+                 <img class=" " src="~/Public/Library/images/Slider/@row.Img" width="1900" height="500" >
+                    <div class="container h-full">
+                        <div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>

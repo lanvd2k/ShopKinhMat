@@ -1,0 +1,23 @@
+﻿@model IEnumerable<ShopBanDo.Models.modelCategory>
+<div class="p-t-55">
+    <h4 class="mtext-112 cl2 p-b-33">
+        Danh mục sản phẩm
+    </h4>
+
+    <ul>
+        @foreach (var row in Model)
+        {
+            <li class="bor18">
+                <a href="~/@row.Slug" class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4">
+                    @row.Name
+                </a>
+            </li>
+        }
+        <li class="bor18">
+            <a href="~/tat-ca-san-pham" class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4">
+                Tất cả sản phẩm
+            </a>
+        </li>
+
+    </ul>
+</div>

@@ -1,0 +1,893 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{75F09238-9133-40B6-84CA-EDA718E9C202}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShopBanDo</RootNamespace>
+    <AssemblyName>ShopBanDo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44387</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.12\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\PagedList.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Public\admin\css\font-awesome.min.css" />
+    <Content Include="Public\admin\css\style.css" />
+    <Content Include="Public\admin\images\1.png" />
+    <Content Include="Public\admin\images\admin.jpg" />
+    <Content Include="Public\admin\images\cun.jpg" />
+    <Content Include="Public\admin\images\e-mail.png" />
+    <Content Include="Public\admin\images\girl.png" />
+    <Content Include="Public\admin\images\key.png" />
+    <Content Include="Public\admin\images\password.png" />
+    <Content Include="Public\admin\images\photo.jpg" />
+    <Content Include="Public\admin\images\tick.png" />
+    <Content Include="Public\admin\images\user.png" />
+    <Content Include="Public\admin\js\jquery.min.js" />
+    <Content Include="Public\admin\js\jquery.vide.js" />
+    <Content Include="Public\admin\js\modernizr.min.js" />
+    <Content Include="Public\css\bootstrap.min.css" />
+    <Content Include="Public\css\cssNganLuong.css" />
+    <Content Include="Public\css\dataTables.bootstrap4.min.css" />
+    <Content Include="Public\css\default.css" />
+    <Content Include="Public\css\font-awesome.min.css" />
+    <Content Include="Public\css\ionicons.min.css" />
+    <Content Include="Public\css\jquery-ui.min.css" />
+    <Content Include="Public\css\jquery.fancybox.css" />
+    <Content Include="Public\css\linearicons.css" />
+    <Content Include="Public\css\meanmenu.min.css" />
+    <Content Include="Public\css\nice-select.css" />
+    <Content Include="Public\css\nivo-slider.css" />
+    <Content Include="Public\css\owl.carousel.min.css" />
+    <Content Include="Public\css\responsive.css" />
+    <Content Include="Public\css\style.css" />
+    <Content Include="Public\css\styleclock.css" />
+    <Content Include="Public\css\summernote-bs4.min.css" />
+    <Content Include="Public\dist\css\adminlte.min.css" />
+    <Content Include="Public\dist\img\AdminLTELogo.png" />
+    <Content Include="Public\dist\js\adminlte.min.js" />
+    <Content Include="Public\dist\js\demo.js" />
+    <Content Include="Public\docs\404.html" />
+    <Content Include="Public\docs\assets\css\adminlte.css" />
+    <Content Include="Public\docs\assets\css\adminlte.min.css" />
+    <Content Include="Public\docs\assets\css\alt\adminlte.components.css" />
+    <Content Include="Public\docs\assets\css\alt\adminlte.components.min.css" />
+    <Content Include="Public\docs\assets\css\alt\adminlte.core.css" />
+    <Content Include="Public\docs\assets\css\alt\adminlte.core.min.css" />
+    <Content Include="Public\docs\assets\css\alt\adminlte.extra-components.css" />
+    <Content Include="Public\docs\assets\css\alt\adminlte.extra-components.min.css" />
+    <Content Include="Public\docs\assets\css\alt\adminlte.pages.css" />
+    <Content Include="Public\docs\assets\css\alt\adminlte.pages.min.css" />
+    <Content Include="Public\docs\assets\css\alt\adminlte.plugins.css" />
+    <Content Include="Public\docs\assets\css\alt\adminlte.plugins.min.css" />
+    <Content Include="Public\docs\assets\css\docs.css" />
+    <Content Include="Public\docs\assets\css\highlighter.css" />
+    <Content Include="Public\docs\assets\img\AdminLTELogo.png" />
+    <Content Include="Public\docs\assets\img\logo-xl.png" />
+    <Content Include="Public\docs\assets\img\logo-xs.png" />
+    <Content Include="Public\docs\assets\img\user1-128x128.jpg" />
+    <Content Include="Public\docs\assets\img\user3-128x128.jpg" />
+    <Content Include="Public\docs\assets\img\user4-128x128.jpg" />
+    <Content Include="Public\docs\assets\img\user5-128x128.jpg" />
+    <Content Include="Public\docs\assets\img\user6-128x128.jpg" />
+    <Content Include="Public\docs\assets\img\user7-128x128.jpg" />
+    <Content Include="Public\docs\assets\img\user8-128x128.jpg" />
+    <Content Include="Public\docs\assets\js\adminlte.js" />
+    <Content Include="Public\docs\assets\js\adminlte.min.js" />
+    <Content Include="Public\docs\assets\js\demo.js" />
+    <Content Include="Public\docs\assets\js\pages\dashboard.js" />
+    <Content Include="Public\docs\assets\js\pages\dashboard2.js" />
+    <Content Include="Public\docs\assets\js\pages\dashboard3.js" />
+    <Content Include="Public\docs\assets\plugins\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="Public\docs\assets\plugins\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Public\docs\assets\plugins\bootstrap\js\bootstrap.js" />
+    <Content Include="Public\docs\assets\plugins\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Public\docs\assets\plugins\fontawesome-free\css\all.css" />
+    <Content Include="Public\docs\assets\plugins\fontawesome-free\css\all.min.css" />
+    <Content Include="Public\docs\assets\plugins\fontawesome-free\css\brands.css" />
+    <Content Include="Public\docs\assets\plugins\fontawesome-free\css\brands.min.css" />
+    <Content Include="Public\docs\assets\plugins\fontawesome-free\css\fontawesome.css" />
+    <Content Include="Public\docs\assets\plugins\fontawesome-free\css\fontawesome.min.css" />
+    <Content Include="Public\docs\assets\plugins\fontawesome-free\css\regular.css" />
+    <Content Include="Public\docs\assets\plugins\fontawesome-free\css\regular.min.css" />
+    <Content Include="Public\docs\assets\plugins\fontawesome-free\css\solid.css" />
+    <Content Include="Public\docs\assets\plugins\fontawesome-free\css\solid.min.css" />
+    <Content Include="Public\docs\assets\plugins\fontawesome-free\css\svg-with-js.css" />
+    <Content Include="Public\docs\assets\plugins\fontawesome-free\css\svg-with-js.min.css" />
+    <Content Include="Public\docs\assets\plugins\fontawesome-free\css\v4-shims.css" />
+    <Content Include="Public\docs\assets\plugins\fontawesome-free\css\v4-shims.min.css" />
+    <Content Include="Public\docs\assets\plugins\fontawesome-free\webfonts\fa-brands-400.svg" />
+    <Content Include="Public\docs\assets\plugins\fontawesome-free\webfonts\fa-regular-400.svg" />
+    <Content Include="Public\docs\assets\plugins\fontawesome-free\webfonts\fa-solid-900.svg" />
+    <Content Include="Public\docs\assets\plugins\jquery\core.js" />
+    <Content Include="Public\docs\assets\plugins\jquery\jquery.js" />
+    <Content Include="Public\docs\assets\plugins\jquery\jquery.min.js" />
+    <Content Include="Public\docs\assets\plugins\jquery\jquery.slim.js" />
+    <Content Include="Public\docs\assets\plugins\jquery\jquery.slim.min.js" />
+    <Content Include="Public\docs\assets\plugins\overlayScrollbars\css\OverlayScrollbars.css" />
+    <Content Include="Public\docs\assets\plugins\overlayScrollbars\css\OverlayScrollbars.min.css" />
+    <Content Include="Public\docs\assets\plugins\overlayScrollbars\js\jquery.overlayScrollbars.js" />
+    <Content Include="Public\docs\assets\plugins\overlayScrollbars\js\jquery.overlayScrollbars.min.js" />
+    <Content Include="Public\docs\assets\plugins\overlayScrollbars\js\OverlayScrollbars.js" />
+    <Content Include="Public\docs\assets\plugins\overlayScrollbars\js\OverlayScrollbars.min.js" />
+    <Content Include="Public\docs\assets\plugins\popper\esm\popper-utils.js" />
+    <Content Include="Public\docs\assets\plugins\popper\esm\popper-utils.min.js" />
+    <Content Include="Public\docs\assets\plugins\popper\esm\popper.js" />
+    <Content Include="Public\docs\assets\plugins\popper\esm\popper.min.js" />
+    <Content Include="Public\docs\assets\plugins\popper\popper-utils.js" />
+    <Content Include="Public\docs\assets\plugins\popper\popper-utils.min.js" />
+    <Content Include="Public\docs\assets\plugins\popper\popper.js" />
+    <Content Include="Public\docs\assets\plugins\popper\popper.min.js" />
+    <Content Include="Public\docs\assets\plugins\popper\umd\popper-utils.js" />
+    <Content Include="Public\docs\assets\plugins\popper\umd\popper-utils.min.js" />
+    <Content Include="Public\docs\assets\plugins\popper\umd\popper.js" />
+    <Content Include="Public\docs\assets\plugins\popper\umd\popper.min.js" />
+    <Content Include="Public\docs\_includes\foot.html" />
+    <Content Include="Public\docs\_includes\footer.html" />
+    <Content Include="Public\docs\_includes\head.html" />
+    <Content Include="Public\docs\_includes\navbar.html" />
+    <Content Include="Public\docs\_includes\sidebar.html" />
+    <Content Include="Public\docs\_layouts\default.html" />
+    <Content Include="Public\docs\_layouts\home.html" />
+    <Content Include="Public\docs\_layouts\page.html" />
+    <Content Include="Public\docs\_layouts\post.html" />
+    <Content Include="Public\fonts\fontawesome-webfont.svg" />
+    <Content Include="Public\fonts\ionicons.svg" />
+    <Content Include="Public\fonts\Linearicons-Free.svg" />
+    <Content Include="Public\images\banks.PNG" />
+    <Content Include="Public\images\cod.PNG" />
+    <Content Include="Public\images\favicon.png" />
+    <Content Include="Public\images\logo.png" />
+    <Content Include="Public\images\logo2.png" />
+    <Content Include="Public\images\map-marker.png" />
+    <Content Include="Public\images\momo.PNG" />
+    <Content Include="Public\images\NL.png" />
+    <Content Include="Public\images\payment-method.png" />
+    <Content Include="Public\images\payments.png" />
+    <Content Include="Public\js\ajax-mail.js" />
+    <Content Include="Public\js\alertifyjs\alertify.js" />
+    <Content Include="Public\js\alertifyjs\alertify.min.js" />
+    <Content Include="Public\js\alertifyjs\css\alertify.min.css" />
+    <Content Include="Public\js\alertifyjs\css\themes\default.min.css" />
+    <Content Include="Public\js\bootstrap.min.js" />
+    <Content Include="Public\js\c.js" />
+    <Content Include="Public\js\dataTables.bootstrap4.min.js" />
+    <Content Include="Public\js\jquery-3.5.1.slim.min.js" />
+    <Content Include="Public\js\jquery-ui.min.js" />
+    <Content Include="Public\js\jquery.countdown.min.js" />
+    <Content Include="Public\js\jquery.dataTables.min.js" />
+    <Content Include="Public\js\jquery.fancybox.min.js" />
+    <Content Include="Public\js\jquery.meanmenu.min.js" />
+    <Content Include="Public\js\jquery.nice-select.min.js" />
+    <Content Include="Public\js\jquery.nivo.slider.js" />
+    <Content Include="Public\js\jquery.scrollUp.js" />
+    <Content Include="Public\js\main.js" />
+    <Content Include="Public\js\owl.carousel.min.js" />
+    <Content Include="Public\js\plugins.js" />
+    <Content Include="Public\js\popper.min.js" />
+    <Content Include="Public\js\quanlytable.js" />
+    <Content Include="Public\js\styleclock.js" />
+    <Content Include="Public\js\summernote-bs4.min.js" />
+    <Content Include="Public\js\vendor\jquery-3.2.1.min.js" />
+    <Content Include="Public\js\vendor\modernizr-3.5.0.min.js" />
+    <Content Include="Public\plugins\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="Public\plugins\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Public\plugins\bootstrap\js\bootstrap.js" />
+    <Content Include="Public\plugins\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Public\plugins\datatables-bs4\css\dataTables.bootstrap4.css" />
+    <Content Include="Public\plugins\datatables-bs4\css\dataTables.bootstrap4.min.css" />
+    <Content Include="Public\plugins\datatables-bs4\js\dataTables.bootstrap4.js" />
+    <Content Include="Public\plugins\datatables-bs4\js\dataTables.bootstrap4.min.js" />
+    <Content Include="Public\plugins\datatables-responsive\css\responsive.bootstrap4.css" />
+    <Content Include="Public\plugins\datatables-responsive\css\responsive.bootstrap4.min.css" />
+    <Content Include="Public\plugins\datatables-responsive\js\dataTables.responsive.js" />
+    <Content Include="Public\plugins\datatables-responsive\js\dataTables.responsive.min.js" />
+    <Content Include="Public\plugins\datatables-responsive\js\responsive.bootstrap4.js" />
+    <Content Include="Public\plugins\datatables-responsive\js\responsive.bootstrap4.min.js" />
+    <Content Include="Public\plugins\datatables\jquery.dataTables.js" />
+    <Content Include="Public\plugins\datatables\jquery.dataTables.min.js" />
+    <Content Include="Public\plugins\fontawesome-free\css\all.css" />
+    <Content Include="Public\plugins\fontawesome-free\css\all.min.css" />
+    <Content Include="Public\plugins\fontawesome-free\css\brands.css" />
+    <Content Include="Public\plugins\fontawesome-free\css\brands.min.css" />
+    <Content Include="Public\plugins\fontawesome-free\css\fontawesome.css" />
+    <Content Include="Public\plugins\fontawesome-free\css\fontawesome.min.css" />
+    <Content Include="Public\plugins\fontawesome-free\css\regular.css" />
+    <Content Include="Public\plugins\fontawesome-free\css\regular.min.css" />
+    <Content Include="Public\plugins\fontawesome-free\css\solid.css" />
+    <Content Include="Public\plugins\fontawesome-free\css\solid.min.css" />
+    <Content Include="Public\plugins\fontawesome-free\css\svg-with-js.css" />
+    <Content Include="Public\plugins\fontawesome-free\css\svg-with-js.min.css" />
+    <Content Include="Public\plugins\fontawesome-free\css\v4-shims.css" />
+    <Content Include="Public\plugins\fontawesome-free\css\v4-shims.min.css" />
+    <Content Include="Public\plugins\fontawesome-free\webfonts\fa-brands-400.svg" />
+    <Content Include="Public\plugins\fontawesome-free\webfonts\fa-regular-400.svg" />
+    <Content Include="Public\plugins\fontawesome-free\webfonts\fa-solid-900.svg" />
+    <Content Include="Public\plugins\jquery\core.js" />
+    <Content Include="Public\plugins\jquery\jquery.js" />
+    <Content Include="Public\plugins\jquery\jquery.min.js" />
+    <Content Include="Public\plugins\jquery\jquery.slim.js" />
+    <Content Include="Public\plugins\jquery\jquery.slim.min.js" />
+    <Content Include="Public\user\css\main.css" />
+    <Content Include="Public\user\css\mainmenu.css" />
+    <Content Include="Public\user\css\util.css" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="Public\user\fonts\iconic\css\material-design-iconic-font.css" />
+    <Content Include="Public\user\fonts\iconic\css\material-design-iconic-font.min.css" />
+    <Content Include="Public\user\fonts\iconic\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="Public\user\fonts\linearicons-v1.0.0\icon-font.min.css" />
+    <Content Include="Public\user\fonts\linearicons-v1.0.0\WebFont\Linearicons-Free.svg" />
+    <Content Include="Public\user\fonts\Montserrat\OFL.txt" />
+    <Content Include="Public\user\fonts\PlayfairDisplay\OFL.txt" />
+    <Content Include="Public\user\images\icons\asp-net-mvc-logo-net-framework-model-view-controller-png-favpng-v24xiWvwG7hnY9K1Y9P8y3tfs.jpg" />
+    <Content Include="Public\user\images\icons\aq1.png" />
+    <Content Include="Public\user\images\icons\favicon.png" />
+    <Content Include="Public\user\images\icons\icon-close.png" />
+    <Content Include="Public\user\images\icons\icon-close2.png" />
+    <Content Include="Public\user\images\icons\icon-email.png" />
+    <Content Include="Public\user\images\icons\icon-heart-01.png" />
+    <Content Include="Public\user\images\icons\icon-heart-02.png" />
+    <Content Include="Public\user\images\icons\icon-next.png" />
+    <Content Include="Public\user\images\icons\icon-pay-01.png" />
+    <Content Include="Public\user\images\icons\icon-pay-02.png" />
+    <Content Include="Public\user\images\icons\icon-pay-03.png" />
+    <Content Include="Public\user\images\icons\icon-pay-04.png" />
+    <Content Include="Public\user\images\icons\icon-pay-05.png" />
+    <Content Include="Public\user\images\icons\icon-prev.png" />
+    <Content Include="Public\user\images\icons\logo-01.png" />
+    <Content Include="Public\user\images\icons\logo-02.png" />
+    <Content Include="Public\user\images\icons\pin.png" />
+    <Content Include="Public\user\js\main.js" />
+    <Content Include="Public\user\js\map-custom.js" />
+    <Content Include="Public\user\js\slick-custom.js" />
+    <Content Include="Public\user\vendor\animate\animate.css" />
+    <Content Include="Public\user\vendor\animsition\css\animsition.css" />
+    <Content Include="Public\user\vendor\animsition\css\animsition.min.css" />
+    <Content Include="Public\user\vendor\animsition\js\animsition.js" />
+    <Content Include="Public\user\vendor\animsition\js\animsition.min.js" />
+    <Content Include="Public\user\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Public\user\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Public\user\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Public\user\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Public\user\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="Public\user\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Public\user\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="Public\user\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Public\user\vendor\bootstrap\js\popper.js" />
+    <Content Include="Public\user\vendor\bootstrap\js\popper.min.js" />
+    <Content Include="Public\user\vendor\bootstrap\js\tooltip.js" />
+    <Content Include="Public\user\vendor\countdowntime\countdowntime.js" />
+    <Content Include="Public\user\vendor\css-hamburgers\hamburgers.css" />
+    <Content Include="Public\user\vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="Public\user\vendor\daterangepicker\daterangepicker.css" />
+    <Content Include="Public\user\vendor\daterangepicker\daterangepicker.js" />
+    <Content Include="Public\user\vendor\daterangepicker\moment.js" />
+    <Content Include="Public\user\vendor\daterangepicker\moment.min.js" />
+    <Content Include="Public\user\vendor\isotope\isotope.pkgd.min.js" />
+    <Content Include="Public\user\vendor\jqueryui\external\jquery\jquery.js" />
+    <Content Include="Public\user\vendor\jqueryui\images\ui-icons_444444_256x240.png" />
+    <Content Include="Public\user\vendor\jqueryui\images\ui-icons_555555_256x240.png" />
+    <Content Include="Public\user\vendor\jqueryui\images\ui-icons_777620_256x240.png" />
+    <Content Include="Public\user\vendor\jqueryui\images\ui-icons_777777_256x240.png" />
+    <Content Include="Public\user\vendor\jqueryui\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Public\user\vendor\jqueryui\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Public\user\vendor\jqueryui\index.html" />
+    <Content Include="Public\user\vendor\jqueryui\jquery-ui.css" />
+    <Content Include="Public\user\vendor\jqueryui\jquery-ui.js" />
+    <Content Include="Public\user\vendor\jqueryui\jquery-ui.min.css" />
+    <Content Include="Public\user\vendor\jqueryui\jquery-ui.min.js" />
+    <Content Include="Public\user\vendor\jqueryui\jquery-ui.structure.css" />
+    <Content Include="Public\user\vendor\jqueryui\jquery-ui.structure.min.css" />
+    <Content Include="Public\user\vendor\jqueryui\jquery-ui.theme.css" />
+    <Content Include="Public\user\vendor\jqueryui\jquery-ui.theme.min.css" />
+    <Content Include="Public\user\vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="Public\user\vendor\lightbox2\css\lightbox.css" />
+    <Content Include="Public\user\vendor\lightbox2\css\lightbox.min.css" />
+    <Content Include="Public\user\vendor\lightbox2\images\close.png" />
+    <Content Include="Public\user\vendor\lightbox2\images\loading.gif" />
+    <Content Include="Public\user\vendor\lightbox2\images\next.png" />
+    <Content Include="Public\user\vendor\lightbox2\images\prev.png" />
+    <Content Include="Public\user\vendor\lightbox2\js\lightbox-plus-jquery.js" />
+    <Content Include="Public\user\vendor\lightbox2\js\lightbox-plus-jquery.min.js" />
+    <Content Include="Public\user\vendor\lightbox2\js\lightbox.js" />
+    <Content Include="Public\user\vendor\lightbox2\js\lightbox.min.js" />
+    <Content Include="Public\user\vendor\MagnificPopup\jquery.magnific-popup.js" />
+    <Content Include="Public\user\vendor\MagnificPopup\jquery.magnific-popup.min.js" />
+    <Content Include="Public\user\vendor\MagnificPopup\magnific-popup.css" />
+    <Content Include="Public\user\vendor\parallax100\parallax100.js" />
+    <Content Include="Public\user\vendor\perfect-scrollbar\perfect-scrollbar.css" />
+    <Content Include="Public\user\vendor\perfect-scrollbar\perfect-scrollbar.min.js" />
+    <Content Include="Public\user\vendor\select2\select2.css" />
+    <Content Include="Public\user\vendor\select2\select2.js" />
+    <Content Include="Public\user\vendor\select2\select2.min.css" />
+    <Content Include="Public\user\vendor\select2\select2.min.js" />
+    <Content Include="Public\user\vendor\slick\ajax-loader.gif" />
+    <Content Include="Public\user\vendor\slick\fonts\slick.svg" />
+    <Content Include="Public\user\vendor\slick\slick-theme.css" />
+    <Content Include="Public\user\vendor\slick\slick.css" />
+    <Content Include="Public\user\vendor\slick\slick.js" />
+    <Content Include="Public\user\vendor\slick\slick.min.js" />
+    <Content Include="Public\user\vendor\sweetalert\sweetalert.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AuthController.cs" />
+    <Compile Include="Areas\Admin\Controllers\BaseController.cs" />
+    <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ContactController.cs" />
+    <Compile Include="Areas\Admin\Controllers\DashboardController.cs" />
+    <Compile Include="Areas\Admin\Controllers\MenuController.cs" />
+    <Compile Include="Areas\Admin\Controllers\OrderController.cs" />
+    <Compile Include="Areas\Admin\Controllers\PageController.cs" />
+    <Compile Include="Areas\Admin\Controllers\PostController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SliderController.cs" />
+    <Compile Include="Areas\Admin\Controllers\TopicController.cs" />
+    <Compile Include="Areas\Admin\Controllers\UserController.cs" />
+    <Compile Include="Common\CommonConstants.cs" />
+    <Compile Include="Controllers\AuthsController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\CartController.cs" />
+    <Compile Include="Controllers\CheckoutController.cs" />
+    <Compile Include="Controllers\ModuleController.cs" />
+    <Compile Include="Controllers\SiteController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Library\Message.cs" />
+    <Compile Include="Library\Messages.cs" />
+    <Compile Include="Library\ModelThongbao.cs" />
+    <Compile Include="Library\MyString.cs" />
+    <Compile Include="Library\Thongbao.cs" />
+    <Compile Include="Library\XString.cs" />
+    <Compile Include="Migrations\202101140207198_InitialCreate.cs" />
+    <Compile Include="Migrations\202101140207198_InitialCreate.Designer.cs">
+      <DependentUpon>202101140207198_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101140223297_99.cs" />
+    <Compile Include="Migrations\202101140223297_99.Designer.cs">
+      <DependentUpon>202101140223297_99.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101160353544_33.cs" />
+    <Compile Include="Migrations\202101160353544_33.Designer.cs">
+      <DependentUpon>202101160353544_33.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101160719590_on.cs" />
+    <Compile Include="Migrations\202101160719590_on.Designer.cs">
+      <DependentUpon>202101160719590_on.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101160759034_45.cs" />
+    <Compile Include="Migrations\202101160759034_45.Designer.cs">
+      <DependentUpon>202101160759034_45.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101161103585_09.cs" />
+    <Compile Include="Migrations\202101161103585_09.Designer.cs">
+      <DependentUpon>202101161103585_09.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\CartItem.cs" />
+    <Compile Include="Models\ListOrder.cs" />
+    <Compile Include="Models\MessageModel.cs" />
+    <Compile Include="Models\modelCategory.cs" />
+    <Compile Include="Models\modelContact.cs" />
+    <Compile Include="Models\modelLink.cs" />
+    <Compile Include="Models\modelMenu.cs" />
+    <Compile Include="Models\modelOrder.cs" />
+    <Compile Include="Models\modelOrderdetail.cs" />
+    <Compile Include="Models\modelPost.cs" />
+    <Compile Include="Models\modelProduct.cs" />
+    <Compile Include="Models\modelSlider.cs" />
+    <Compile Include="Models\modelTopic.cs" />
+    <Compile Include="Models\modelUser.cs" />
+    <Compile Include="Models\PostTopic.cs" />
+    <Compile Include="Models\ProductCategory.cs" />
+    <Compile Include="Models\ShopBanDoDbContext.cs" />
+    <Compile Include="MomoAPI\momoInfo.cs" />
+    <Compile Include="MomoAPI\MoMoSecurity.cs" />
+    <Compile Include="MomoAPI\PaymentRequest.cs" />
+    <Compile Include="NganLuongAPI\APICheckoutV3.cs" />
+    <Compile Include="NganLuongAPI\nganluongInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Content Include="Public\js\ajaxClent.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\Admin\Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Areas\Admin\Views\Dashboard\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\Trash.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Message.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\Trash.cshtml" />
+    <Content Include="Areas\Admin\Views\Slider\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Slider\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Slider\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Slider\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Slider\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Slider\Trash.cshtml" />
+    <Content Include="Areas\Admin\Views\Topic\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Topic\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Topic\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Topic\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Topic\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Topic\Trash.cshtml" />
+    <Content Include="Areas\Admin\Views\Post\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Post\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Post\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Post\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Post\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Post\Trash.cshtml" />
+    <Content Include="Areas\Admin\Views\Menu\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Menu\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Menu\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Menu\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Menu\Trash.cshtml" />
+    <Content Include="Areas\Admin\Views\Page\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Page\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Page\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Page\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Page\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Page\Trash.cshtml" />
+    <Content Include="Areas\Admin\Views\Order\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Order\Orderdetail.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Auth\Login.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Trash.cshtml" />
+    <Content Include="Areas\Admin\Views\Contact\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Contact\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Contact\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Contact\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Contact\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Contact\Reply.cshtml" />
+    <Content Include="Areas\Admin\Views\Order\Trash.cshtml" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Public\css\font\summernote.eot" />
+    <Content Include="Public\css\font\summernote.ttf" />
+    <Content Include="Public\css\font\summernote.woff" />
+    <Content Include="Public\css\font\summernote.woff2" />
+    <Content Include="Public\docs\.npmignore" />
+    <Content Include="Public\docs\assets\css\adminlte.css.map" />
+    <Content Include="Public\docs\assets\css\adminlte.min.css.map" />
+    <Content Include="Public\docs\assets\css\alt\adminlte.components.css.map" />
+    <Content Include="Public\docs\assets\css\alt\adminlte.components.min.css.map" />
+    <Content Include="Public\docs\assets\css\alt\adminlte.core.css.map" />
+    <Content Include="Public\docs\assets\css\alt\adminlte.core.min.css.map" />
+    <Content Include="Public\docs\assets\css\alt\adminlte.extra-components.css.map" />
+    <Content Include="Public\docs\assets\css\alt\adminlte.extra-components.min.css.map" />
+    <Content Include="Public\docs\assets\css\alt\adminlte.pages.css.map" />
+    <Content Include="Public\docs\assets\css\alt\adminlte.pages.min.css.map" />
+    <Content Include="Public\docs\assets\css\alt\adminlte.plugins.css.map" />
+    <Content Include="Public\docs\assets\css\alt\adminlte.plugins.min.css.map" />
+    <Content Include="Public\docs\assets\js\adminlte.js.map" />
+    <Content Include="Public\docs\assets\js\adminlte.min.js.map" />
+    <Content Include="Public\docs\assets\plugins\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="Public\docs\assets\plugins\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Public\docs\assets\plugins\bootstrap\js\bootstrap.js.map" />
+    <Content Include="Public\docs\assets\plugins\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="Public\docs\assets\plugins\fontawesome-free\webfonts\fa-brands-400.eot" />
+    <Content Include="Public\docs\assets\plugins\fontawesome-free\webfonts\fa-brands-400.ttf" />
+    <Content Include="Public\docs\assets\plugins\fontawesome-free\webfonts\fa-brands-400.woff" />
+    <Content Include="Public\docs\assets\plugins\fontawesome-free\webfonts\fa-brands-400.woff2" />
+    <Content Include="Public\docs\assets\plugins\fontawesome-free\webfonts\fa-regular-400.eot" />
+    <Content Include="Public\docs\assets\plugins\fontawesome-free\webfonts\fa-regular-400.ttf" />
+    <Content Include="Public\docs\assets\plugins\fontawesome-free\webfonts\fa-regular-400.woff" />
+    <Content Include="Public\docs\assets\plugins\fontawesome-free\webfonts\fa-regular-400.woff2" />
+    <Content Include="Public\docs\assets\plugins\fontawesome-free\webfonts\fa-solid-900.eot" />
+    <Content Include="Public\docs\assets\plugins\fontawesome-free\webfonts\fa-solid-900.ttf" />
+    <Content Include="Public\docs\assets\plugins\fontawesome-free\webfonts\fa-solid-900.woff" />
+    <Content Include="Public\docs\assets\plugins\fontawesome-free\webfonts\fa-solid-900.woff2" />
+    <Content Include="Public\docs\assets\plugins\jquery\jquery.min.map" />
+    <Content Include="Public\docs\assets\plugins\jquery\jquery.slim.min.map" />
+    <Content Include="Public\docs\assets\plugins\popper\esm\popper-utils.js.map" />
+    <Content Include="Public\docs\assets\plugins\popper\esm\popper-utils.min.js.map" />
+    <Content Include="Public\docs\assets\plugins\popper\esm\popper.js.map" />
+    <Content Include="Public\docs\assets\plugins\popper\esm\popper.min.js.map" />
+    <Content Include="Public\docs\assets\plugins\popper\popper-utils.js.map" />
+    <Content Include="Public\docs\assets\plugins\popper\popper-utils.min.js.map" />
+    <Content Include="Public\docs\assets\plugins\popper\popper.js.map" />
+    <Content Include="Public\docs\assets\plugins\popper\popper.min.js.map" />
+    <Content Include="Public\docs\assets\plugins\popper\umd\popper-utils.js.map" />
+    <Content Include="Public\docs\assets\plugins\popper\umd\popper-utils.min.js.map" />
+    <Content Include="Public\docs\assets\plugins\popper\umd\popper.js.flow" />
+    <Content Include="Public\docs\assets\plugins\popper\umd\popper.js.map" />
+    <Content Include="Public\docs\assets\plugins\popper\umd\popper.min.js.map" />
+    <Content Include="Public\docs\assets\plugins\popper\umd\poppper.js.flow" />
+    <Content Include="Public\docs\browser-support.md" />
+    <Content Include="Public\docs\components\boxes.md" />
+    <Content Include="Public\docs\components\cards.md" />
+    <Content Include="Public\docs\components\control-sidebar.md" />
+    <Content Include="Public\docs\components\direct-chat.md" />
+    <Content Include="Public\docs\components\main-header.md" />
+    <Content Include="Public\docs\components\main-sidebar.md" />
+    <Content Include="Public\docs\components\miscellaneous.md" />
+    <Content Include="Public\docs\components\plugins.md" />
+    <Content Include="Public\docs\components\ribbons.md" />
+    <Content Include="Public\docs\components\timeline.md" />
+    <Content Include="Public\docs\dependencies.md" />
+    <Content Include="Public\docs\faq.md" />
+    <Content Include="Public\docs\Gemfile" />
+    <Content Include="Public\docs\implementations.md" />
+    <Content Include="Public\docs\index.md" />
+    <Content Include="Public\docs\javascript\card-refresh.md" />
+    <Content Include="Public\docs\javascript\card-widget.md" />
+    <Content Include="Public\docs\javascript\control-sidebar.md" />
+    <Content Include="Public\docs\javascript\direct-chat.md" />
+    <Content Include="Public\docs\javascript\layout.md" />
+    <Content Include="Public\docs\javascript\push-menu.md" />
+    <Content Include="Public\docs\javascript\toasts.md" />
+    <Content Include="Public\docs\javascript\todo-list.md" />
+    <Content Include="Public\docs\javascript\treeview.md" />
+    <Content Include="Public\docs\layout.md" />
+    <Content Include="Public\docs\license.md" />
+    <Content Include="Public\docs\upgrade-guide.md" />
+    <Content Include="Public\docs\_config.yml" />
+    <Content Include="Public\fonts\fontawesome-webfont.eot" />
+    <Content Include="Public\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Public\fonts\fontawesome-webfont.woff" />
+    <Content Include="Public\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Public\fonts\ionicons.eot" />
+    <Content Include="Public\fonts\ionicons.ttf" />
+    <Content Include="Public\fonts\ionicons.woff" />
+    <Content Include="Public\fonts\Linearicons-Free.eot" />
+    <Content Include="Public\fonts\Linearicons-Free.ttf" />
+    <Content Include="Public\fonts\Linearicons-Free.woff" />
+    <Content Include="Public\fonts\Linearicons-Free.woff2" />
+    <Content Include="Public\plugins\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="Public\plugins\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Public\plugins\bootstrap\js\bootstrap.js.map" />
+    <Content Include="Public\plugins\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="Public\plugins\fontawesome-free\webfonts\fa-brands-400.eot" />
+    <Content Include="Public\plugins\fontawesome-free\webfonts\fa-brands-400.ttf" />
+    <Content Include="Public\plugins\fontawesome-free\webfonts\fa-brands-400.woff" />
+    <Content Include="Public\plugins\fontawesome-free\webfonts\fa-brands-400.woff2" />
+    <Content Include="Public\plugins\fontawesome-free\webfonts\fa-regular-400.eot" />
+    <Content Include="Public\plugins\fontawesome-free\webfonts\fa-regular-400.ttf" />
+    <Content Include="Public\plugins\fontawesome-free\webfonts\fa-regular-400.woff" />
+    <Content Include="Public\plugins\fontawesome-free\webfonts\fa-regular-400.woff2" />
+    <Content Include="Public\plugins\fontawesome-free\webfonts\fa-solid-900.eot" />
+    <Content Include="Public\plugins\fontawesome-free\webfonts\fa-solid-900.ttf" />
+    <Content Include="Public\plugins\fontawesome-free\webfonts\fa-solid-900.woff" />
+    <Content Include="Public\plugins\fontawesome-free\webfonts\fa-solid-900.woff2" />
+    <Content Include="Public\plugins\jquery\jquery.min.map" />
+    <Content Include="Public\plugins\jquery\jquery.slim.min.map" />
+    <Content Include="Views\Shared\_LayoutSite.cshtml" />
+    <Content Include="Views\Site\Home.cshtml" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\less\core.less" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\less\list.less" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\less\path.less" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="Public\user\fonts\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="Public\user\fonts\iconic\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="Public\user\fonts\iconic\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="Public\user\fonts\iconic\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="Public\user\fonts\iconic\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="Public\user\fonts\linearicons-v1.0.0\WebFont\Linearicons-Free.eot" />
+    <Content Include="Public\user\fonts\linearicons-v1.0.0\WebFont\Linearicons-Free.ttf" />
+    <Content Include="Public\user\fonts\linearicons-v1.0.0\WebFont\Linearicons-Free.woff" />
+    <Content Include="Public\user\fonts\linearicons-v1.0.0\WebFont\Linearicons-Free.woff2" />
+    <Content Include="Public\user\fonts\Montserrat\Montserrat-Black.ttf" />
+    <Content Include="Public\user\fonts\Montserrat\Montserrat-BlackItalic.ttf" />
+    <Content Include="Public\user\fonts\Montserrat\Montserrat-Bold.ttf" />
+    <Content Include="Public\user\fonts\Montserrat\Montserrat-BoldItalic.ttf" />
+    <Content Include="Public\user\fonts\Montserrat\Montserrat-ExtraBold.ttf" />
+    <Content Include="Public\user\fonts\Montserrat\Montserrat-ExtraBoldItalic.ttf" />
+    <Content Include="Public\user\fonts\Montserrat\Montserrat-ExtraLight.ttf" />
+    <Content Include="Public\user\fonts\Montserrat\Montserrat-ExtraLightItalic.ttf" />
+    <Content Include="Public\user\fonts\Montserrat\Montserrat-Italic.ttf" />
+    <Content Include="Public\user\fonts\Montserrat\Montserrat-Light.ttf" />
+    <Content Include="Public\user\fonts\Montserrat\Montserrat-LightItalic.ttf" />
+    <Content Include="Public\user\fonts\Montserrat\Montserrat-Medium.ttf" />
+    <Content Include="Public\user\fonts\Montserrat\Montserrat-MediumItalic.ttf" />
+    <Content Include="Public\user\fonts\Montserrat\Montserrat-Regular.ttf" />
+    <Content Include="Public\user\fonts\Montserrat\Montserrat-SemiBold.ttf" />
+    <Content Include="Public\user\fonts\Montserrat\Montserrat-SemiBoldItalic.ttf" />
+    <Content Include="Public\user\fonts\Montserrat\Montserrat-Thin.ttf" />
+    <Content Include="Public\user\fonts\Montserrat\Montserrat-ThinItalic.ttf" />
+    <Content Include="Public\user\fonts\PlayfairDisplay\PlayfairDisplay-Black.ttf" />
+    <Content Include="Public\user\fonts\PlayfairDisplay\PlayfairDisplay-BlackItalic.ttf" />
+    <Content Include="Public\user\fonts\PlayfairDisplay\PlayfairDisplay-Bold.ttf" />
+    <Content Include="Public\user\fonts\PlayfairDisplay\PlayfairDisplay-BoldItalic.ttf" />
+    <Content Include="Public\user\fonts\PlayfairDisplay\PlayfairDisplay-Italic.ttf" />
+    <Content Include="Public\user\fonts\PlayfairDisplay\PlayfairDisplay-Regular.ttf" />
+    <Content Include="Public\user\fonts\Poppins\Poppins-Black.ttf" />
+    <Content Include="Public\user\fonts\Poppins\Poppins-BlackItalic.ttf" />
+    <Content Include="Public\user\fonts\Poppins\Poppins-Bold.ttf" />
+    <Content Include="Public\user\fonts\Poppins\Poppins-BoldItalic.ttf" />
+    <Content Include="Public\user\fonts\Poppins\Poppins-ExtraBold.ttf" />
+    <Content Include="Public\user\fonts\Poppins\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="Public\user\fonts\Poppins\Poppins-ExtraLight.ttf" />
+    <Content Include="Public\user\fonts\Poppins\Poppins-ExtraLightItalic.ttf" />
+    <Content Include="Public\user\fonts\Poppins\Poppins-Italic.ttf" />
+    <Content Include="Public\user\fonts\Poppins\Poppins-Light.ttf" />
+    <Content Include="Public\user\fonts\Poppins\Poppins-LightItalic.ttf" />
+    <Content Include="Public\user\fonts\Poppins\Poppins-Medium.ttf" />
+    <Content Include="Public\user\fonts\Poppins\Poppins-MediumItalic.ttf" />
+    <Content Include="Public\user\fonts\Poppins\Poppins-Regular.ttf" />
+    <Content Include="Public\user\fonts\Poppins\Poppins-SemiBold.ttf" />
+    <Content Include="Public\user\fonts\Poppins\Poppins-SemiBoldItalic.ttf" />
+    <Content Include="Public\user\fonts\Poppins\Poppins-Thin.ttf" />
+    <Content Include="Public\user\fonts\Poppins\Poppins-ThinItalic.ttf" />
+    <Content Include="Public\user\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="Public\user\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="Public\user\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="Public\user\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Public\user\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Public\user\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Public\user\vendor\lightbox2\js\lightbox-plus-jquery.min.map" />
+    <Content Include="Public\user\vendor\lightbox2\js\lightbox.min.map" />
+    <Content Include="Public\user\vendor\slick\config.rb" />
+    <Content Include="Public\user\vendor\slick\fonts\slick.eot" />
+    <Content Include="Public\user\vendor\slick\fonts\slick.ttf" />
+    <Content Include="Public\user\vendor\slick\fonts\slick.woff" />
+    <Content Include="Public\user\vendor\slick\slick-theme.less" />
+    <Content Include="Public\user\vendor\slick\slick-theme.scss" />
+    <Content Include="Public\user\vendor\slick\slick.less" />
+    <Content Include="Public\user\vendor\slick\slick.scss" />
+    <Content Include="Views\Site\_ProductHome.cshtml" />
+    <Content Include="Views\Site\ProductDetail.cshtml" />
+    <Content Include="Views\Module\Header.cshtml" />
+    <Content Include="Views\Module\Cart.cshtml" />
+    <Content Include="Views\Module\Slider.cshtml" />
+    <Content Include="Views\Module\Banner.cshtml" />
+    <Content Include="Views\Module\Footer.cshtml" />
+    <Content Include="Views\Site\Search.cshtml" />
+    <Content Include="Views\Site\ProductCategory.cshtml" />
+    <Content Include="Views\Module\ListCategory.cshtml" />
+    <Content Include="Views\Site\Product.cshtml" />
+    <Content Include="Views\Cart\Index.cshtml" />
+    <Content Include="Views\Cart\Cart.cshtml" />
+    <Content Include="Views\Checkout\DetailCheckOut.cshtml" />
+    <Content Include="Views\Checkout\Index.cshtml" />
+    <Content Include="Views\Checkout\oderComplete.cshtml" />
+    <Content Include="Views\Checkout\_DetailProduct.cshtml" />
+    <Content Include="Views\Checkout\_SubNameProduct.cshtml" />
+    <Content Include="Views\Auths\Login.cshtml" />
+    <Content Include="Views\Checkout\cancel_order.cshtml" />
+    <Content Include="Views\Auths\register.cshtml" />
+    <Content Include="Views\Shared\_MessgeAlert.cshtml" />
+    <Content Include="Public\admin\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Public\admin\fonts\fontawesome-webfont.woff" />
+    <Content Include="Public\admin\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Views\Module\Quantity.cshtml" />
+    <Content Include="Views\Module\Post.cshtml" />
+    <Content Include="Views\Module\CategoryList.cshtml" />
+    <Content Include="Views\Site\PostPage.cshtml" />
+    <Content Include="Views\Module\PageList.cshtml" />
+    <Content Include="Views\Module\ListCategoryFooter.cshtml" />
+    <Content Include="Views\Module\ListPageFooter.cshtml" />
+    <Content Include="Views\Site\Post.cshtml" />
+    <Content Include="Views\Site\PostHome.cshtml" />
+    <Content Include="Views\Site\Contact.cshtml" />
+    <Content Include="Views\Site\ThanksContact.cshtml" />
+    <Content Include="Views\Checkout\confirm_orderPaymentOnline.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Views\Base\" />
+    <Folder Include="Public\admin\video\" />
+    <Folder Include="Public\Library\images\Page\" />
+    <Folder Include="Public\Library\images\Post\" />
+    <Folder Include="Public\Library\images\Product\" />
+    <Folder Include="Public\Library\images\Slider\" />
+    <Folder Include="Public\Library\images\User\" />
+    <Folder Include="Views\Base\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202101140207198_InitialCreate.resx">
+      <DependentUpon>202101140207198_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101140223297_99.resx">
+      <DependentUpon>202101140223297_99.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101160353544_33.resx">
+      <DependentUpon>202101160353544_33.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101160719590_on.resx">
+      <DependentUpon>202101160719590_on.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101160759034_45.resx">
+      <DependentUpon>202101160759034_45.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101161103585_09.resx">
+      <DependentUpon>202101161103585_09.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50521</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44387/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

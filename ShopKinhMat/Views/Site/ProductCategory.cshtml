@@ -1,0 +1,108 @@
+﻿@using PagedList.Mvc;
+@model PagedList.IPagedList<ShopBanDo.Models.modelProduct>
+@{
+    ViewBag.Title = @ViewBag.CatName;
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+}
+<br />
+<br />
+<!-- breadcrumb -->
+<div class="container">
+    <div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">
+        <a href="~/" class="stext-109 cl8 hov-cl1 trans-04">
+            Trang Chủ
+            <i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
+        </a>
+        <span class="stext-109 cl4">
+            <a href="~/@ViewBag.Slug">
+                @ViewBag.CatName
+            </a>
+        </span>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            @Html.Action("ListCategory","Module")
+        </div>
+        <div class="col-md-9">
+
+            <!-- Product -->
+            @if (Model.Count() == 0)
+            {
+                <div class="bg0 m-t-23 p-b-140">
+                    <div class="container">
+                        <div class="row isotope-grid">
+
+                            <div class="">
+                                <!-- Block2 -->
+
+                                <div class="block2">
+                                    <div class="block2-txt flex-w flex-t p-t-14">
+                                        <p style="text-align:center; color:royalblue;">Chưa có sản phẩm trong danh mục này</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- Load more -->
+
+
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="bg0 m-t-23 p-b-140">
+                    <div class="container">
+                        <div class="row isotope-grid">
+                            @foreach (var row in Model)
+                            {
+                                <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+                                    <!-- Block2 -->
+                                    <div class="block2">
+                                        <div class="block2-pic hov-img0">
+                                            <img src="~/Public/Library/images/product/@row.Img" alt="@row.Name">
+
+                                            <a href="javascript:void(0)" onclick="addcartHome(@row.Id)" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1" style="font-size:10px;">
+                                                Thêm vào giỏ hàng
+                                            </a>
+                                        </div>
+
+                                        <div class="block2-txt flex-w flex-t p-t-14">
+                                            <div class="block2-txt-child1 flex-col-l ">
+                                                <a href="~/@row.Slug" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+                                                    @row.Name
+                                                </a>
+
+                                                <span class="stext-105 cl3">
+                                                    @String.Format("{0:0,0₫}", @row.Price_sale)
+                                                </span>
+                                            </div>
+
+                                            <div class="block2-txt-child2 flex-r p-t-3">
+                                                <a href="~/thanh-toan" class="btn-addwish-b2 dis-block pos-relative js">
+                                                    <img class="icon-heart1 dis-block trans-04" src="~/Public/user/images/icons/icon-heart-01.png" alt="ICON">
+                                                    <img class="icon-heart2 dis-block trans-04 ab-t-l" src="~/Public/user/images/icons/icon-heart-02.png" alt="ICON">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            }
+                        </div>
+                        <!-- Load more -->
+                        <div class="flex-c-m flex-w w-full p-t-45">
+                            @Html.PagedListPager(Model, page => Url.Action("Index",
+                                        "Site", new { slug = ViewBag.Slug, page }))
+                        </div>
+
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

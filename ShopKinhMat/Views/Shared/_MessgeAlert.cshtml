@@ -1,0 +1,9 @@
+﻿@if (Message.has_flash())
+{
+    ModelThongbao ms = Message.get_flash();
+    <div class="float-left ">
+        <span class=" ml-3 badge badge-@ms.msg_type text-white ">@ms.msg</span>
+    </div>
+}
+
+

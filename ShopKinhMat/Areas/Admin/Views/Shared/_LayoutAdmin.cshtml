@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>@ViewBag.Title</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Table -->
+    <link href="~/Public/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="~/Public/plugins/fontawesome-free/css/all.min.css">
+
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="~/Public/dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link href="~/Public/css/summernote-bs4.min.css" rel="stylesheet" />
+</head>
+
+<body class="hold-transition sidebar-mini">
+    <style>
+        .dropdown-menu-lg{
+            min-width:0px;
+        }
+    </style>
+    <!-- Site wrapper -->
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="/admin" class="nav-link">Trang Chủ</a>
+                </li>
+
+            </ul>
+
+            <!-- SEARCH FORM -->
+            <form class="form-inline ml-3">
+                <div class="input-group input-group-sm">
+                    <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-navbar" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Messages Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="far fa-comments"></i>
+
+                    </a>
+
+                </li>
+                <!-- Notifications Dropdown Menu -->
+
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+                        <i class="fas fa-th-large"></i>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="far fa-user"></i>
+
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <span class="dropdown-item dropdown-header">Profile</span>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-edit"></i> Sửa thông tin
+
+                        </a>
+                        <a href="~/admin/logout" class="dropdown-item">
+                            <i class="fas fa-sign-out-alt"></i> Thoát
+
+                        </a>
+                    </div>
+
+                </li>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="/admin" class="brand-link">
+                <img src="~/Public/dist/img/AdminLTELogo.png"
+                     alt="AdminLTE Logo"
+                     class="brand-image img-circle elevation-3"
+                     style="opacity: .8">
+                <span class="brand-text font-weight-light">Quản trị viên</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    @*<div class="image">
+                            <img src="~/Public/user/img/user/@Model.Img" class="img-circle elevation-2" alt="User Image">
+                        </div>*@
+                    <div class="info">
+                        <a href="#" class="d-block"> Người Quản Trị: @Session["Admin_Name"] </a>
+                    </div>
+                </div>
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+                             with font-awesome or any other icon font library -->
+                        <li class="nav-item has-treeview">
+                            <a href="~/Admin" class="nav-link">
+                                <i class="fas fa-home"></i>
+                                <p>
+                                    Trang Chính
+
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="~/Admin/Category" class="nav-link">
+                                <i class="fas fa-copyright"></i>
+                                <p>
+                                    Danh Mục Sản Phẩm
+
+                                </p>
+                            </a>
+
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a href="~/Admin/Product" class="nav-link">
+                                <i class="fab fa-product-hunt"></i>
+                                <p>
+                                    Sản Phẩm
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a href="~/Admin/Contact" class="nav-link">
+                                <i class="far fa-copyright"></i>
+                                <p>
+                                    Liên Hệ
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a href="~/Admin/Menu" class="nav-link">
+                                <i class="fab fa-stripe-s"></i>
+                                <p>
+                                    Main Menu
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a href="~/Admin/Order" class="nav-link">
+                                <i class="fab fa-opera"></i>
+                                <p>
+                                    Đơn Hàng
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a href="~/Admin/Post" class="nav-link">
+                                <i class="fab fa-product-hunt"></i>
+                                <p>
+                                    Bài Viết
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a href="~/Admin/Page" class="nav-link">
+                                <i class="fab fa-product-hunt"></i>
+                                <p>
+                                    Trang Đơn
+                                </p>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item has-treeview">
+                            <a href="~/Admin/Slider" class="nav-link">
+                                <i class="fab fa-stripe-s"></i>
+                                <p>
+                                    SlideShow
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a href="~/Admin/Topic" class="nav-link">
+                                <i class="fab fa-product-hunt"></i>
+                                <p>
+                                    Chủ Đề Bài Viết
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a href="~/Admin/User" class="nav-link">
+                                <i class="fas fa-underline"></i>
+                                <p>
+                                    Người Dùng
+                                </p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+        @RenderBody()
+        <footer class="main-footer">
+            <div class="float-right d-none d-sm-block">
+                <b>Version</b> 3.0.4
+            </div>
+            <strong>Copyright &copy; 2021-2022 <a href="http://fb.com/" style="color:red">ADMIN</a>.</strong> All rights
+            reserved.
+        </footer>
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+    <!-- jQuery -->
+    <script src="~/Public/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="~/Public/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- DataTables -->
+    <script src="~/Public/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/Public/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/Public/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="~/Public/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="~/Public/js/summernote-bs4.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="~/Public/dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="~/Public/dist/js/demo.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Cấu hình các nhãn phân trang
+            $('#example1').dataTable({
+                columnDefs: [{
+                    "targets": 'no-sort',
+                    "orderable": false,
+                }],
+                "order": [
+                ],
+                "language": {
+                    "sProcessing": "Đang xử lý...",
+                    "sLengthMenu": "Xem _MENU_ mục",
+                    "sZeroRecords": "Không tìm thấy dòng nào phù hợp",
+                    "sInfo": "Đang xem _START_ đến _END_ trong tổng số _TOTAL_ mục",
+                    "sInfoEmpty": "Đang xem 0 đến 0 trong tổng số 0 mục",
+                    "sInfoFiltered": "(được lọc từ _MAX_ mục)",
+                    "sInfoPostFix": "",
+                    "sSearch": "Tìm:",
+                    "sUrl": "",
+                    "oPaginate": {
+                        "sFirst": "Đầu",
+                        "sPrevious": "Trước",
+                        "sNext": "Tiếp",
+                        "sLast": "Cuối"
+                    }
+                },
+            });
+        });
+
+    </script>
+    <script>
+        $(function () {
+            //Add text editor
+            $('.textarea').summernote();
+        })
+    </script>
+</body>
+</html>

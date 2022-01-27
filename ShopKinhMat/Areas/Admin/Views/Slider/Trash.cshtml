@@ -1,0 +1,93 @@
+﻿@model IEnumerable<ShopBanDo.Models.modelSlider>
+@{
+    ViewBag.Title = "Trash";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Trash</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="~/Admin/Slider">Slider</a></li>
+                        <li class="breadcrumb-item active">Danh sách</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="col-12">
+            <!-- /.card -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-8">
+                            Product
+                        </div>
+                        <div class="col-4">
+                            <div class="float-right pt-1">
+                                <button type="button" class="btn btn-primary btn-sm">
+                                    <a href="~/Admin/Slider/Index" class="text-white"><i class="fas fa-arrow-circle-left"></i>&nbsp; Trở về</a>
+                                </button>
+                                <button type="button" class="btn btn-danger btn-sm">
+                                    <a href="~/Admin/Slider/Trash" class="text-white"><i class="far fa-trash-alt fa-xs"></i>&nbsp; Thùng rác</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card">
+                    <table id="example1" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th class="no-sort">ID</th>
+                                <th class="no-sort">Tên Slider</th>
+                                <th class="no-sort">Ngày tạo</th>
+                                <th class="no-sort">Hình Slider</th>
+                                <th>Công cụ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Id)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Name)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Created_at)
+                                    </td>
+                                    <td>
+                                        <img src="~/Public/Library/images/Slider/@Html.DisplayFor(modelItem => item.Img)" width="100" />
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-secondary btn-sm"><a class="text-white" href="~/Admin/Slider/Undo/@item.Id"><i class="fas fa-undo-alt"></i></a></button>
+                                        <button type="button" class="btn btn-dark btn-sm"><a class="text-white d-block" href="~/Admin/Slider/Delete/@item.Id"><i class="fas fa-trash"></i></a></button>
+                                    </td>
+
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+        <!-- /.row -->
+    </section>
+    <!-- /.content -->
+</div>
+

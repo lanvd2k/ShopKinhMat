@@ -1,0 +1,75 @@
+﻿@model ShopBanDo.Models.modelSlider
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1>Chi tiết</h1>
+                    </div>
+                    <div class="col-6">
+                        <div class="float-right pt-1">
+                            <a href="@Url.Action("Index","Slider")" class="btn btn-danger btn-sm"><i class="fas fa-arrow-circle-left"></i>Trở về</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /.container-fluid -->
+        </section>
+        <!-- Main content -->
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-md-7">
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <div class="form-group">
+                                <label>Tên Slider</label>
+                                <br />
+                                @Html.Raw(Model.Name)
+                            </div>
+                            <div class="form-group">
+                                <label>Liên kết</label>
+                                <br />
+                                @Html.Raw(Model.Link)
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-5">
+                            @*bên phải*@
+                            <div class="form-group">
+                                <label>Ngày tạo</label>
+                                <br />
+                                @Html.Raw(Model.Updated_at)
+
+                            </div>
+                            <div class="form-group">
+                                <label>Người tạo</label>
+                                <br />
+                                @Html.Raw(Model.Updated_by)
+                            </div>
+                            <div class="form-group">
+                                <label>Hình Slider</label>
+                                <img src="~/Public/Library/images/slider/@Model.Img" alt="Alternate Text" width="300" class="d-block mx-auto" />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+        <!-- /.col -->
+    </div>
+}

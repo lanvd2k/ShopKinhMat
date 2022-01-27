@@ -1,0 +1,118 @@
+﻿@model IEnumerable<ShopBanDo.Models.ProductCategory>
+
+@{
+    ViewBag.Title = "Sản phẩm";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Quản lý Product</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Product</a></li>
+                        <li class="breadcrumb-item active">Danh sách</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-8">
+                                Product
+                            </div>
+                            <div class="col-4">
+                                <div class="float-right pt-1">
+                                    <p type="button" class="btn btn-primary btn-sm">
+                                        <a href="~/Admin/Product/Create" class="text-white"><i class="fas fa-plus fa-xs"></i>&nbsp;Thêm mới</a>
+                                    </p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th class="no-sort">ID</th>
+                                    <th class="no-sort">Tên sản phẩm</th>
+                                    <th class="no-sort">Loại sản phẩm</th>
+                                    <th class="no-sort">Hình sản phẩm</th>
+                                    <th class="no-sort">Khuyến mãi</th>
+                                    <th >Công cụ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.ProductId)
+                                        </td>
+                                        <td>
+                                            <a href="@Url.Action("Details","Product", new {Id = item.ProductId })">@item.ProductName</a>
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.CategoryName)
+                                        </td>
+                                        <td>
+                                            <img src="~/Public/Library/images/product/@Html.DisplayFor(modelItem => item.ProductImg)" width="100" />
+                                        </td>
+                                        <td>
+                                            @if (item.ProductDiscount == 1)
+                                            {
+                                                <p type="button" class="btn btn-success btn-sm" title="Hiện giảm giá"><a class="text-white" href="~/Admin/Product/Discount/@item.ProductId"><i class="fas fa-toggle-on"></i></a></p>
+                                            }
+                                            else
+                                            {
+                                                <p type="button" class="btn btn-secondary btn-sm" title="Ẩn giảm giá"><a class="text-white" href="~/Admin/Product/Discount/@item.ProductId"><i class="fas fa-toggle-off"></i></a></p>
+                                            }
+                                        </td>
+                                        <td>
+                                            @if (item.ProductStatus == 1)
+                                            {
+                                                <p type="button" class="btn btn-success btn-sm" title="On"><a class="text-white" href="~/Admin/Product/Status/@item.ProductId"><i class="fas fa-toggle-on"></i></a></p>
+                                            }
+                                            else
+                                            {
+                                                <p type="button" class="btn btn-secondary btn-sm" title="Off"><a class="text-white" href="~/Admin/Product/Status/@item.ProductId"><i class="fas fa-toggle-off"></i></a></p>
+                                            }
+                                            <p type="button" class="btn btn-secondary btn-sm"><a class="text-white" href="~/Admin/Product/Edit/@Html.DisplayFor(modelItem => item.ProductId)"><i class="fas fa-edit"></i></a></p>
+                                            <p type="button" class="btn btn-dark btn-sm"><a class="text-white d-block" href="~/Admin/Product/delTrash/@Html.DisplayFor(modelItem => item.ProductId)"><i class="far fa-trash-alt"></i></a></p>
+                                        </td>
+                                    </tr>  
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </section>
+    <!-- /.content -->
+</div>

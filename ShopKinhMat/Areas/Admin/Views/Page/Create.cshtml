@@ -1,0 +1,105 @@
+﻿@model ShopBanDo.Models.modelPost
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Create</h2>
+<style>
+    .note-table{
+        display:none;
+    }
+    .note-toolbar{
+        text-align:center;
+    }
+    .note-editing-area{
+        min-height:100rem;
+    }
+</style>
+@using (Html.BeginForm("Create", "Page", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1>Thêm Page Mới</h1>
+                    </div>
+                    <div class="col-6">
+                        <div class="float-right pt-1">
+                            <input type="submit" value="Create" class="btn btn-primary btn-sm fas fa-plus-circle" />
+                            <a href="@Url.Action("Index","Page")" class="btn btn-danger btn-sm"><i class="fas fa-arrow-circle-left"></i>Trở về</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /.container-fluid -->
+        </section>
+        <!-- Main content -->
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-md-9">
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <div class="form-group">
+                                <label>Tên trang đơn</label>
+                                @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Slug, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                <label>Nội dung</label>
+
+                                @Html.TextAreaFor(model => model.Detail, new { @class = "textarea", style = "height: 100px" })
+                                @Html.ValidationMessageFor(model => model.Detail, "", new { @class = "text-danger" })
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-3">
+                            @*bên phải*@
+                            <div class="form-group">
+                                <label>Từ khóa [CEO]</label>
+                                @Html.EditorFor(model => model.MetaKey, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.MetaKey, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                <label>Mô tả [CEO]</label>
+                                @Html.EditorFor(model => model.MetaDesc, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.MetaDesc, "", new { @class = "text-danger" })
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Trạng thái</label>
+                                <select class="form-control" name="Status">
+                                    <option value="1">Hiện</option>
+                                    <option value="2">Ẩn</option>
+
+                                </select>
+                                @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                <label>Hình đại diện</label>
+                                <input type="file" name="Img" class="form-control" />
+                            </div>
+                        </div>
+                        
+                     </div>
+
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+        <!-- /.col -->
+    </div>
+}
+
+
+
+

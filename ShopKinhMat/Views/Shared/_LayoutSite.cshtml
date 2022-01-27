@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@ViewBag.Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="~/Public/user/images/icons/favicon.png" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Public/user/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Public/user/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Public/user/fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Public/user/fonts/linearicons-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Public/user/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Public/user/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Public/user/vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Public/user/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Public/user/vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Public/user/vendor/slick/slick.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Public/user/vendor/MagnificPopup/magnific-popup.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Public/user/vendor/perfect-scrollbar/perfect-scrollbar.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Public/user/css/util.css">
+    <link href="~/Public/js/alertifyjs/css/alertify.min.css" rel="stylesheet" />
+    <link href="~/Public/js/alertifyjs/css/themes/default.min.css" rel="stylesheet" />
+    <link href="~/Public/user/css/mainmenu.css" rel="stylesheet" />
+    <!--===============================================================================================-->
+</head>
+<body class="animsition">
+    <!-- Header -->
+    @Html.Action("Header", "Module")
+    <!-- Cart -->
+    @Html.Action("Cart", "Module")
+    <!-- Slider -->
+
+    @RenderBody()
+    
+    <!-- Footer -->
+    @Html.Action("Footer", "Module")
+    <!-- Back to top -->
+    <div class="btn-back-to-top" id="myBtn">
+        <span class="symbol-btn-back-to-top">
+            <i class="zmdi zmdi-chevron-up"></i>
+        </span>
+    </div>
+    <!--===============================================================================================-->
+    <script src="~/Public/user/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Public/user/vendor/animsition/js/animsition.min.js"></script>
+    <script src="~/Public/user/vendor/daterangepicker/moment.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Public/user/vendor/bootstrap/js/popper.js"></script>
+    <script src="~/Public/user/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <!--===============================================================================================-->
+
+    <script src="~/Public/user/vendor/slick/slick.min.js"></script>
+    <script src="~/Public/user/js/slick-custom.js"></script>
+    <script src="~/Public/user/vendor/parallax100/parallax100.js"></script>
+    <script src="~/Public/js/ajaxClent.js"></script>
+    <script src="~/Public/js/alertifyjs/alertify.js"></script>
+    <script src="~/Public/js/alertifyjs/alertify.min.js"></script>
+    <script>
+        $('.parallax100').parallax100();
+    </script>
+    <!--===============================================================================================-->
+    <!--===============================================================================================-->
+    <!--===============================================================================================-->
+    <script src="~/Public/user/vendor/isotope/isotope.pkgd.min.js"></script>
+    <!--===============================================================================================-->
+    <!--===============================================================================================-->
+    <script src="~/Public/user/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,256 @@
+﻿
+@{
+    ViewBag.Title = "Đăng nhập tài khoản";
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+}
+<style>
+    .login-title {
+        font-size: 20px;
+        line-height: 23px;
+        text-transform: capitalize;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    .login-form {
+        background-color: #ffffff;
+        padding: 30px;
+        -webkit-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.1);
+    }
+
+        .login-form label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 12px;
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+
+        .login-form .nice-select {
+            width: 100%;
+            background-color: transparent;
+            border: 1px solid #999999;
+            border-radius: 0;
+            line-height: 23px;
+            padding: 10px 20px;
+            font-size: 14px;
+            height: 45px;
+            color: #7a7a7a;
+            margin-bottom: 15px;
+        }
+
+            .login-form .nice-select::after {
+                width: 6px;
+                height: 6px;
+                border-width: 1px;
+                right: 20px;
+                border-color: #7a7a7a;
+            }
+
+            .login-form .nice-select .current {
+                color: #7a7a7a;
+                display: block;
+                line-height: 23px;
+            }
+
+            .login-form .nice-select .list {
+                width: 100%;
+            }
+
+        .login-form input {
+            width: 100%;
+            background-color: transparent;
+            border: 1px solid #999999;
+            border-radius: 0;
+            line-height: 23px;
+            padding: 10px 20px;
+            font-size: 14px;
+            color: #7a7a7a;
+            margin-bottom: 15px;
+        }
+
+            .login-form input[type="checkbox"] {
+                width: auto;
+            }
+
+        .login-form .check-box {
+            float: left;
+            margin-right: 70px;
+        }
+
+            .login-form .check-box:last-child {
+                margin-right: 0;
+            }
+
+            .login-form .check-box input[type="checkbox"] {
+                display: none;
+            }
+
+                .login-form .check-box input[type="checkbox"] + label {
+                    position: relative;
+                    padding-left: 30px;
+                    line-height: 20px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #363f4d;
+                    margin: 0;
+                }
+
+                    .login-form .check-box input[type="checkbox"] + label::before {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 20px;
+                        height: 20px;
+                        display: block;
+                        border: 2px solid #999999;
+                        content: "";
+                        -webkit-transition: all 0.3s ease 0s;
+                        -o-transition: all 0.3s ease 0s;
+                        transition: all 0.3s ease 0s;
+                    }
+
+                    .login-form .check-box input[type="checkbox"] + label::after {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        display: block;
+                        content: "\f00c";
+                        font-family: Fontawesome;
+                        font-size: 12px;
+                        line-height: 20px;
+                        opacity: 0;
+                        color: #363f4d;
+                        width: 20px;
+                        text-align: center;
+                        -webkit-transition: all 0.3s ease 0s;
+                        -o-transition: all 0.3s ease 0s;
+                        transition: all 0.3s ease 0s;
+                    }
+
+                .login-form .check-box input[type="checkbox"]:checked + label::before {
+                    border: 2px solid #363f4d;
+                }
+
+                .login-form .check-box input[type="checkbox"]:checked + label::after {
+                    opacity: 1;
+                }
+
+    /*-- Place Order --*/
+    .register-button {
+        display: block;
+        margin-top: 40px;
+        width: 140px;
+        border-radius: 0;
+        height: 36px;
+        border: none;
+        line-height: 24px;
+        padding: 6px 20px;
+        float: left;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #ffffff;
+        background-color: #363f4d;
+        border-radius: 3px;
+        transition: all 0.3s ease-in-out;
+    }
+
+        .register-button:hover {
+            background: #fed700;
+        }
+</style>
+<br />
+<br />
+<!-- breadcrumb -->
+<div class="container">
+    <div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">
+        <a href="~/" class="stext-109 cl8 hov-cl1 trans-04">
+            Trang Chủ
+            <i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
+        </a>
+
+        <span class="stext-109 cl4">
+            Đăng nhập
+        </span>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-xs-12 col-lg-6 mb-30">
+            <!-- Login Form s-->
+            <form action="login" method="post">
+                <div class="login-form">
+                    <h4 class="login-title">Đăng nhập</h4>
+                    @Html.Raw(ViewBag.Error)
+                    <div class="row">
+                        <div class="col-md-12 col-12 mb-20">
+                            <label>Tên truy cập*</label>
+                            <input class="mb-0" type="text" name="user" placeholder="Email Address">
+                        </div>
+                        <div class="col-12 mb-20">
+                            <label>Mật khẩu</label>
+                            <input class="mb-0" type="password" name="password" placeholder="Password">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="check-box d-inline-block ml-0 ml-md-2 mt-10">
+                                <input type="checkbox" id="remember_me">
+                                <label for="remember_me">Remember me</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-10 mb-20 text-left text-md-right">
+                            <a href="#"> Forgotten pasward?</a>
+                        </div>
+                        <div class="col-md-12">
+                            <button class="register-button mt-0" type="submit">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xs-12">
+            <form action="" method="post">
+                <div class="login-form">
+                    <h4 class="login-title">Đăng ký tài khoản</h4>
+                    @Html.Partial("_MessgeAlert")
+                    @Html.Raw(ViewBag.Error)
+                    <div class="row">
+
+
+                        <div class="col-md-6 col-12 mb-20">
+                            <label>Họ và tên</label>
+                            <input class="mb-0" name="fname" type="text" required placeholder="Tên đăng nhập hoặc Email" disabled>
+                        </div>
+                        <div class="col-md-6 col-12 mb-20">
+                            <label>Tên đăng nhập</label>
+                            <input class="mb-0" name="uname" type="text" required placeholder="Tên đăng nhập hoặc Email" disabled>
+                        </div>
+                        <div class="col-md-12 mb-20">
+                            <label>Email</label>
+                            <input class="mb-0" name="email" type="email" required placeholder="Email" disabled>
+                        </div>
+                        <div class="col-md-6 mb-20">
+                            <label>Mật khẩu</label>
+                            <input class="mb-0" name="psw" type="password" required placeholder="Mật khẩu" disabled>
+                        </div>
+                        <div class="col-md-6 mb-20">
+                            <label>Nhập lại mật khẩu</label>
+                            <input class="mb-0" name="repsw" type="password" required placeholder="Nhập lại mật khẩu" disabled>
+                        </div>
+                        <div class="col-md-6 mb-20">
+                            <label>Số điện thoại</label>
+                            <input class="mb-0" name="phone" type="text" required placeholder="Số điện thoại" disabled>
+                        </div>
+                        <div class="col-md-6 mb-20">
+                            <label>Địa chỉ</label>
+                            <input class="mb-0" name="address" type="text" required placeholder="Địa chỉ sinh sống" disabled>
+                        </div>
+                        <div class="col-12">
+                            <button class="register-button mt-0" type="button" disabled>Đăng ký</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,182 @@
+E:\Shopdienthoai\Shopdienthoai\bin\ShopBanDo.dll.config
+E:\Shopdienthoai\Shopdienthoai\bin\ShopBanDo.dll
+E:\Shopdienthoai\Shopdienthoai\bin\ShopBanDo.pdb
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\csc.exe
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\csc.exe.config
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\csc.rsp
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\csi.exe
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\csi.exe.config
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\csi.rsp
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\System.AppContext.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Collections.Immutable.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Console.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Globalization.Calendars.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\System.IO.Compression.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\System.IO.FileSystem.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Net.Http.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Net.Sockets.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Reflection.Metadata.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\System.ValueTuple.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Xml.XPath.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\vbc.exe
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\vbc.exe.config
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\vbc.rsp
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\VBCSCompiler.exe
+E:\Shopdienthoai\Shopdienthoai\bin\roslyn\VBCSCompiler.exe.config
+E:\Shopdienthoai\Shopdienthoai\bin\EntityFramework.dll
+E:\Shopdienthoai\Shopdienthoai\bin\EntityFramework.SqlServer.dll
+E:\Shopdienthoai\Shopdienthoai\bin\log4net.dll
+E:\Shopdienthoai\Shopdienthoai\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Shopdienthoai\Shopdienthoai\bin\Microsoft.Web.Infrastructure.dll
+E:\Shopdienthoai\Shopdienthoai\bin\Newtonsoft.Json.dll
+E:\Shopdienthoai\Shopdienthoai\bin\PagedList.dll
+E:\Shopdienthoai\Shopdienthoai\bin\PagedList.Mvc.dll
+E:\Shopdienthoai\Shopdienthoai\bin\System.Web.Helpers.dll
+E:\Shopdienthoai\Shopdienthoai\bin\System.Web.Mvc.dll
+E:\Shopdienthoai\Shopdienthoai\bin\System.Web.Razor.dll
+E:\Shopdienthoai\Shopdienthoai\bin\System.Web.Webpages.Deployment.dll
+E:\Shopdienthoai\Shopdienthoai\bin\System.Web.Webpages.dll
+E:\Shopdienthoai\Shopdienthoai\bin\System.Web.Webpages.Razor.dll
+E:\Shopdienthoai\Shopdienthoai\bin\EntityFramework.xml
+E:\Shopdienthoai\Shopdienthoai\bin\EntityFramework.SqlServer.xml
+E:\Shopdienthoai\Shopdienthoai\bin\log4net.xml
+E:\Shopdienthoai\Shopdienthoai\bin\Newtonsoft.Json.xml
+E:\Shopdienthoai\Shopdienthoai\bin\PagedList.xml
+E:\Shopdienthoai\Shopdienthoai\bin\PagedList.Mvc.xml
+E:\Shopdienthoai\Shopdienthoai\bin\System.Web.Razor.xml
+E:\Shopdienthoai\Shopdienthoai\bin\System.Web.Webpages.xml
+E:\Shopdienthoai\Shopdienthoai\bin\System.Web.Webpages.Deployment.xml
+E:\Shopdienthoai\Shopdienthoai\bin\System.Web.Webpages.Razor.xml
+E:\Shopdienthoai\Shopdienthoai\bin\System.Web.Helpers.xml
+E:\Shopdienthoai\Shopdienthoai\bin\System.Web.Mvc.xml
+E:\Shopdienthoai\Shopdienthoai\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Shopdienthoai\Shopdienthoai\obj\Debug\Shopdienthoai.csprojAssemblyReference.cache
+E:\Shopdienthoai\Shopdienthoai\obj\Debug\ShopBanDo.Migrations.InitialCreate.resources
+E:\Shopdienthoai\Shopdienthoai\obj\Debug\ShopBanDo.Migrations._99.resources
+E:\Shopdienthoai\Shopdienthoai\obj\Debug\ShopBanDo.Migrations._33.resources
+E:\Shopdienthoai\Shopdienthoai\obj\Debug\ShopBanDo.Migrations.on.resources
+E:\Shopdienthoai\Shopdienthoai\obj\Debug\ShopBanDo.Migrations._45.resources
+E:\Shopdienthoai\Shopdienthoai\obj\Debug\ShopBanDo.Migrations._09.resources
+E:\Shopdienthoai\Shopdienthoai\obj\Debug\Shopdienthoai.csproj.GenerateResource.cache
+E:\Shopdienthoai\Shopdienthoai\obj\Debug\Shopdienthoai.csproj.CoreCompileInputs.cache
+E:\Shopdienthoai\Shopdienthoai\obj\Debug\Shopdienthoai.csproj.CopyComplete
+E:\Shopdienthoai\Shopdienthoai\obj\Debug\ShopBanDo.dll
+E:\Shopdienthoai\Shopdienthoai\obj\Debug\ShopBanDo.pdb
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\ShopBanDo.dll.config
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\ShopBanDo.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\ShopBanDo.pdb
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\csc.exe
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\csc.exe.config
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\csc.rsp
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\csi.exe
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\csi.exe.config
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\csi.rsp
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\System.AppContext.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Console.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\System.IO.Compression.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Net.Http.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Net.Sockets.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\System.ValueTuple.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Xml.XPath.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\vbc.exe
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\vbc.exe.config
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\vbc.rsp
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\VBCSCompiler.exe
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\EntityFramework.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\EntityFramework.SqlServer.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\log4net.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\Newtonsoft.Json.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\PagedList.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\PagedList.Mvc.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\System.Web.Helpers.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\System.Web.Mvc.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\System.Web.Razor.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\System.Web.Webpages.Deployment.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\System.Web.Webpages.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\System.Web.Webpages.Razor.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\EntityFramework.xml
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\EntityFramework.SqlServer.xml
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\log4net.xml
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\Newtonsoft.Json.xml
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\PagedList.xml
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\PagedList.Mvc.xml
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\System.Web.Razor.xml
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\System.Web.Webpages.xml
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\System.Web.Webpages.Deployment.xml
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\System.Web.Webpages.Razor.xml
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\System.Web.Helpers.xml
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\System.Web.Mvc.xml
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\obj\Debug\Shopdienthoai.csproj.AssemblyReference.cache
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\obj\Debug\ShopBanDo.Migrations.InitialCreate.resources
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\obj\Debug\ShopBanDo.Migrations._99.resources
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\obj\Debug\ShopBanDo.Migrations._33.resources
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\obj\Debug\ShopBanDo.Migrations.on.resources
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\obj\Debug\ShopBanDo.Migrations._45.resources
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\obj\Debug\ShopBanDo.Migrations._09.resources
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\obj\Debug\Shopdienthoai.csproj.GenerateResource.cache
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\obj\Debug\Shopdienthoai.csproj.CoreCompileInputs.cache
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\obj\Debug\Shopdienthoai.csproj.CopyComplete
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\obj\Debug\ShopBanDo.dll
+C:\Users\HP\Downloads\Thanh toán momo _Shopdienthoai\Shopdienthoai\Shopdienthoai\obj\Debug\ShopBanDo.pdb

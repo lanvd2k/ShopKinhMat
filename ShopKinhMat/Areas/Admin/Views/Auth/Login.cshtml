@@ -1,0 +1,59 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html>
+<head>
+    <title>Trang Quản Lý</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <!-- /fonts -->
+    <!-- css -->
+    <link href="~/Public/admin/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/Public/admin/css/style.css" rel="stylesheet" type='text/css' media="all" />
+    <!-- /css -->
+</head>
+<body>
+    <div class="overlay">
+        <h1 class="w3layouts agileits">Trang Quản Lý</h1>
+        <div class="content-w3ls agileits">
+            <img src="~/Public/admin/images/admin.jpg" alt="" class="user-wthree">
+            <h2>Login @ViewBag.pass</h2>
+            <form action="login" method="post">
+                <div class="form-group1-agile agile-info">
+                    <input type="text" name="user" value="Username" onfocus="this.value = '';"
+                           onblur="if (this.value == '') {this.value = 'Username';}">
+                </div>
+                <div class="form-group2-agile agile-info">
+                    <input type="password" name="password" value="Password" onfocus="this.value = '';"
+                           onblur="if (this.value == '') {this.value = 'Password';}">
+                </div>
+                <div class="form-group3-agile wthree">
+                    <input type="checkbox" id="brand" value="">
+                    <label for="brand"><span></span> Remember Me ?</label>
+                </div>
+                <input type="submit" value="LOG IN">
+            </form>
+            <a href="#" class="face-link"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a>
+            <a href="#" class="face-google"><i class="fa fa-google" aria-hidden="true"></i> Google</a>
+            @Html.Raw(ViewBag.Error)
+        </div>
+        <div class="footer-w3ls w3-agile">
+            @*//noi dung*@
+        </div>
+    </div>
+    <video autoplay loop id="video-background" poster="~/Public/admin/images/photo.jpg" muted>
+        <source src="~/Public/admin/images/photo.jpg" type="images/photo.jpg">
+    </video>
+    <!-- js -->
+    <script src="~/Public/admin/js/modernizr.min.js"></script>
+    <!-- /js -->
+</body>
+</html>

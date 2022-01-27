@@ -1,0 +1,364 @@
+D:\ShopKinhMat\ShopKinhMat\bin\ShopBanDo.dll.config
+D:\ShopKinhMat\ShopKinhMat\bin\ShopBanDo.dll
+D:\ShopKinhMat\ShopKinhMat\bin\ShopBanDo.pdb
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\csc.exe
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\csc.exe.config
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\csc.rsp
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\csi.exe
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\csi.exe.config
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\csi.rsp
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.Managed.Core.targets
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\System.AppContext.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Collections.Immutable.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Console.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Globalization.Calendars.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\System.IO.Compression.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\System.IO.FileSystem.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Net.Http.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Net.Sockets.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Reflection.Metadata.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\System.ValueTuple.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Xml.XmlDocument.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Xml.XPath.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\vbc.exe
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\vbc.exe.config
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\vbc.rsp
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\VBCSCompiler.exe
+D:\ShopKinhMat\ShopKinhMat\bin\roslyn\VBCSCompiler.exe.config
+D:\ShopKinhMat\ShopKinhMat\bin\EntityFramework.dll
+D:\ShopKinhMat\ShopKinhMat\bin\EntityFramework.SqlServer.dll
+D:\ShopKinhMat\ShopKinhMat\bin\log4net.dll
+D:\ShopKinhMat\ShopKinhMat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\ShopKinhMat\ShopKinhMat\bin\Microsoft.Web.Infrastructure.dll
+D:\ShopKinhMat\ShopKinhMat\bin\Newtonsoft.Json.dll
+D:\ShopKinhMat\ShopKinhMat\bin\PagedList.dll
+D:\ShopKinhMat\ShopKinhMat\bin\PagedList.Mvc.dll
+D:\ShopKinhMat\ShopKinhMat\bin\System.Web.Helpers.dll
+D:\ShopKinhMat\ShopKinhMat\bin\System.Web.Mvc.dll
+D:\ShopKinhMat\ShopKinhMat\bin\System.Web.Razor.dll
+D:\ShopKinhMat\ShopKinhMat\bin\System.Web.Webpages.Deployment.dll
+D:\ShopKinhMat\ShopKinhMat\bin\System.Web.Webpages.dll
+D:\ShopKinhMat\ShopKinhMat\bin\System.Web.Webpages.Razor.dll
+D:\ShopKinhMat\ShopKinhMat\bin\EntityFramework.xml
+D:\ShopKinhMat\ShopKinhMat\bin\EntityFramework.SqlServer.xml
+D:\ShopKinhMat\ShopKinhMat\bin\log4net.xml
+D:\ShopKinhMat\ShopKinhMat\bin\Newtonsoft.Json.xml
+D:\ShopKinhMat\ShopKinhMat\bin\PagedList.xml
+D:\ShopKinhMat\ShopKinhMat\bin\PagedList.Mvc.xml
+D:\ShopKinhMat\ShopKinhMat\bin\System.Web.Razor.xml
+D:\ShopKinhMat\ShopKinhMat\bin\System.Web.Webpages.xml
+D:\ShopKinhMat\ShopKinhMat\bin\System.Web.Webpages.Deployment.xml
+D:\ShopKinhMat\ShopKinhMat\bin\System.Web.Webpages.Razor.xml
+D:\ShopKinhMat\ShopKinhMat\bin\System.Web.Helpers.xml
+D:\ShopKinhMat\ShopKinhMat\bin\System.Web.Mvc.xml
+D:\ShopKinhMat\ShopKinhMat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\ShopKinhMat\ShopKinhMat\obj\Debug\Shopkinhmat.csproj.AssemblyReference.cache
+D:\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.Migrations.InitialCreate.resources
+D:\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.Migrations._99.resources
+D:\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.Migrations._33.resources
+D:\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.Migrations.on.resources
+D:\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.Migrations._45.resources
+D:\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.Migrations._09.resources
+D:\ShopKinhMat\ShopKinhMat\obj\Debug\Shopkinhmat.csproj.GenerateResource.cache
+D:\ShopKinhMat\ShopKinhMat\obj\Debug\Shopkinhmat.csproj.CoreCompileInputs.cache
+D:\ShopKinhMat\ShopKinhMat\obj\Debug\Shopkinhmat.csproj.CopyComplete
+D:\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.dll
+D:\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.pdb
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\ShopBanDo.dll.config
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\ShopBanDo.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\ShopBanDo.pdb
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\csc.exe
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\csc.exe.config
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\csc.rsp
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\csi.exe
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\csi.exe.config
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\csi.rsp
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.AppContext.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Console.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.IO.Compression.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Net.Http.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Net.Sockets.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.ValueTuple.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Xml.XPath.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\vbc.exe
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\vbc.exe.config
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\vbc.rsp
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\VBCSCompiler.exe
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\EntityFramework.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\EntityFramework.SqlServer.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\log4net.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\Newtonsoft.Json.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\PagedList.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\PagedList.Mvc.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Helpers.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Mvc.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Razor.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Webpages.Deployment.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Webpages.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Webpages.Razor.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\EntityFramework.xml
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\EntityFramework.SqlServer.xml
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\log4net.xml
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\Newtonsoft.Json.xml
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\PagedList.xml
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\PagedList.Mvc.xml
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Razor.xml
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Webpages.xml
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Webpages.Deployment.xml
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Webpages.Razor.xml
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Helpers.xml
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Mvc.xml
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\Shopkinhmat.csproj.AssemblyReference.cache
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.Migrations.InitialCreate.resources
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.Migrations._99.resources
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.Migrations._33.resources
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.Migrations.on.resources
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.Migrations._45.resources
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.Migrations._09.resources
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\Shopkinhmat.csproj.GenerateResource.cache
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\Shopkinhmat.csproj.CoreCompileInputs.cache
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\Shopkinhmat.csproj.CopyComplete
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.dll
+C:\Users\an\Desktop\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.pdb
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\ShopBanDo.dll.config
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\ShopBanDo.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\ShopBanDo.pdb
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\csc.exe
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\csc.exe.config
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\csc.rsp
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\csi.exe
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\csi.exe.config
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\csi.rsp
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.Managed.Core.targets
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.AppContext.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Collections.Immutable.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Console.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Globalization.Calendars.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.IO.Compression.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.IO.FileSystem.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Net.Http.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Net.Sockets.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Reflection.Metadata.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.ValueTuple.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Xml.XmlDocument.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Xml.XPath.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\vbc.exe
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\vbc.exe.config
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\vbc.rsp
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\VBCSCompiler.exe
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\VBCSCompiler.exe.config
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\EntityFramework.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\EntityFramework.SqlServer.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\log4net.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\Microsoft.Web.Infrastructure.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\Newtonsoft.Json.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\PagedList.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\PagedList.Mvc.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Helpers.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Mvc.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Razor.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Webpages.Deployment.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Webpages.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Webpages.Razor.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\EntityFramework.xml
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\EntityFramework.SqlServer.xml
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\log4net.xml
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\Newtonsoft.Json.xml
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\PagedList.xml
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\PagedList.Mvc.xml
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Razor.xml
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Webpages.xml
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Webpages.Deployment.xml
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Webpages.Razor.xml
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Helpers.xml
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Mvc.xml
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\Shopkinhmat.csproj.AssemblyReference.cache
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.Migrations.InitialCreate.resources
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.Migrations._99.resources
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.Migrations._33.resources
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.Migrations.on.resources
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.Migrations._45.resources
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.Migrations._09.resources
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\Shopkinhmat.csproj.GenerateResource.cache
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\Shopkinhmat.csproj.CoreCompileInputs.cache
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\Shopkinhmat.csproj.CopyComplete
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.dll
+D:\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.pdb
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\ShopBanDo.dll.config
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\ShopBanDo.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\ShopBanDo.pdb
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\csc.exe
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\csc.exe.config
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\csc.rsp
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\csi.exe
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\csi.exe.config
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\csi.rsp
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.AppContext.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Collections.Immutable.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Console.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Globalization.Calendars.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.IO.Compression.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.IO.FileSystem.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Net.Http.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Net.Sockets.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Reflection.Metadata.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.ValueTuple.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Xml.XPath.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\vbc.exe
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\vbc.exe.config
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\vbc.rsp
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\VBCSCompiler.exe
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\roslyn\VBCSCompiler.exe.config
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\EntityFramework.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\EntityFramework.SqlServer.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\log4net.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\Microsoft.Web.Infrastructure.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\Newtonsoft.Json.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\PagedList.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\PagedList.Mvc.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Helpers.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Mvc.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Razor.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Webpages.Deployment.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Webpages.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Webpages.Razor.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\EntityFramework.xml
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\EntityFramework.SqlServer.xml
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\log4net.xml
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\Newtonsoft.Json.xml
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\PagedList.xml
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\PagedList.Mvc.xml
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Razor.xml
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Webpages.xml
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Webpages.Deployment.xml
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Webpages.Razor.xml
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Helpers.xml
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\System.Web.Mvc.xml
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\Shopkinhmat.csproj.AssemblyReference.cache
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.Migrations.InitialCreate.resources
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.Migrations._99.resources
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.Migrations._33.resources
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.Migrations.on.resources
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.Migrations._45.resources
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.Migrations._09.resources
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\Shopkinhmat.csproj.GenerateResource.cache
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\Shopkinhmat.csproj.CoreCompileInputs.cache
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\Shopkinhmat.csproj.CopyComplete
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.dll
+D:\Lập trình ud csdl trên web\ShopKinhMat\ShopKinhMat\ShopKinhMat\obj\Debug\ShopBanDo.pdb

@@ -1,0 +1,101 @@
+﻿@model ShopBanDo.Models.modelOrder
+@{
+    ViewBag.Title = "Thanh toán thành công";
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+}
+<br />
+<br />
+<!-- breadcrumb -->
+<div class="container">
+    <div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">
+        <a href="~/" class="stext-109 cl8 hov-cl1 trans-04">
+            Trang Chủ
+            <i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
+        </a>
+
+        <span class="stext-109 cl4">
+            Thanh toán thành công
+        </span>
+    </div>
+</div>
+
+
+
+<!-- order complete Page Start -->
+<section class="order-complete inner-page-sec-padding-bottom">
+    <div class="container bg-white">
+        <div class="row">
+            
+            <div class="col-md-12">
+                <div class="order-complete-message text-center">
+                    <h1 style="color:cadetblue;">Đã nhận được đơn đặt hàng của bạn.</h1>
+                </div>
+                <table class="table table-bordered table-hover">
+
+                    <tr>
+                        <th scope="col"> Mã đơn hàng</th>
+                        <td scope="col">  @Html.DisplayFor(model => model.Id)</td>
+                    </tr>
+                    <tr>
+                        <th scope="col"> Tên khách hàng</th>
+                        <td scope="col">  @Html.DisplayFor(model => model.DeliveryName)</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Số điện thoại</th>
+                        <td scope="col">  @Html.DisplayFor(model => model.DeliveryPhone)</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Email liên hệ</th>
+                        <td scope="col">  @Html.DisplayFor(model => model.DeliveryEmail)</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Địa chỉ nhận hàng</th>
+                        <td scope="col">  @Html.DisplayFor(model => model.DeliveryAddress)</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Ngày đặt hàng</th>
+                        <td scope="col"> @(string.Format("{0:dd MM yyyy hh:mm tt}", @Html.DisplayFor(model => model.CreateDate)))</td>
+                        
+                    </tr>
+                    <tr>
+                        <th scope="col">Trạng thái thanh toán</th>
+                        <td scope="col">
+                            @if (ViewBag.paymentStatus == 1)
+                            {
+                                <p>Đã thanh toán</p>
+                            }
+                            else if (ViewBag.statusCod == 1)
+                            {
+                                <p>Đã thanh toán</p>
+                            }
+                            else
+                            {
+                                <p>Chưa thanh toán vui lòng thanh toán lại.</p>
+                            }
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <th scope="col">Phương thức thanh toán</th>
+                        <td scope="col">  @ViewBag.Methodpayment</td>
+                    </tr>
+                </table>
+                    
+            </div>
+            
+        </div>
+        <div class="row">
+
+            <div class="col-12">
+               
+                <br />
+                <h3 class="order-table-title" style="text-align:center;">CHI TIẾT ĐƠN HÀNG</h3>
+                <br />
+                <div class="table-responsive">
+                    @Html.Action("productDetailCheckOut", "Checkout", new { orderId = Model.Id })
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

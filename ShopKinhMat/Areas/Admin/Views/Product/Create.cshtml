@@ -1,0 +1,136 @@
+﻿@model ShopBanDo.Models.modelProduct
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<style>
+    .note-table {
+        display: none;
+    }
+
+    .note-toolbar {
+        text-align: center;
+    }
+
+    .note-editing-area {
+        min-height: 20rem;
+    }
+</style>
+<h2>Create</h2>
+
+@using (Html.BeginForm("Create", "Product", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1>Thêm sản phẩm mới</h1>
+                    </div>
+                    <div class="col-6">
+                        <div class="float-right pt-1">
+                            <input type="submit" value="Create" class="btn btn-primary btn-sm" />
+                            <button type="button" class="btn btn-danger btn-sm">
+                                <a href="~/Admin/Product/Index" class="text-white"><i class="fas fa-arrow-circle-left"></i>&nbsp; Trở về</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /.container-fluid -->
+        </section>
+        <!-- Main content -->
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-md-9">
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <div class="form-group">
+                                <label>Tên loại sản phẩm</label>
+                                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                <label>Từ khóa (CEO)</label>
+                                @Html.TextAreaFor(model => model.Metakey, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Metakey, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                <label>Chi tiết SP</label>
+                               
+                                @Html.TextAreaFor(model => model.Detail, new { @class = "textarea", style = "height: 100px" })
+                                @Html.ValidationMessageFor(model => model.Detail, "", new { @class = "text-danger" })
+                            </div>
+
+                            <div class="form-group">
+                                <label>Mô tả sản phẩm</label>
+
+                                @Html.TextAreaFor(model => model.Metadesc, new { @class = "textarea" })
+                                @Html.ValidationMessageFor(model => model.Metadesc, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            @*bên phải*@
+                            <div class="form-group">
+                                <label>Chủ đề cha</label>
+                                @Html.DropDownListFor(model => model.CatId, (SelectList)ViewBag.ListCat, "[Chọn chủ đề]", new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.CatId, "", new { @class = "text-danger" })
+
+                            </div>
+                            <div class="form-group">
+                                <label>Số lượng</label>
+                                @Html.EditorFor(model => model.Number, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Number, "", new { @class = "text-danger" })
+
+                            </div>
+                            <div class="form-group">
+                                <label>Giá</label>
+                                @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+
+                            </div>
+                            <div class="form-group">
+                                <label>Giá KM</label>
+                                @Html.EditorFor(model => model.Price_sale, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Price_sale, "", new { @class = "text-danger" })
+
+                            </div>
+
+                            <div class="form-group">
+                                <label>Trạng thái</label>
+                                <select class="form-control" name="Status">
+                                    <option value="1">Xuất Bản</option>
+                                    <option value="2">Chưa Xuất Bản</option>
+
+                                </select>
+                                @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                <label>Khuyến mãi</label>
+                                <select class="form-control" name="Discount">
+                                    <option value="1">Hiện</option>
+                                    <option value="2">Ẩn</option>
+
+                                </select>
+                                @Html.ValidationMessageFor(model => model.Discount, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                <label>Hình đại diện</label>
+                                <input type="file" name="Img" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+        <!-- /.col -->
+    </div>
+}

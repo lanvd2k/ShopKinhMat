@@ -1,0 +1,103 @@
+﻿@model IEnumerable<ShopBanDo.Models.modelCategory>
+
+@{
+    ViewBag.Title = "Loại sản phẩm: ";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Quản lý danh mục</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Categories</a></li>
+                        <li class="breadcrumb-item active">Danh sách</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="col-12">
+                <!-- /.card -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-8">
+                                Categories
+                            </div>
+                            <div class="col-4">
+                                <div class="float-right pt-1">
+                                    <a href="@Url.Action("Create","Category")" class="btn btn-sm btn-success"><i class="fas fa-plus fa-xs"></i>Thêm mới</a>
+                                    <a href="@Url.Action("Trash","Category")" class="btn btn-sm btn-danger"><i class="far fa-trash-alt fa-xs"></i>Thùng rác (@ViewBag.demrac)</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card">
+                        @Html.Partial("_Message")
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Cấp cha</th>
+                                    <th>Ngày tạo</th>
+                                    <th>Link</th>
+                                    <th>Công cụ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Id)
+                                        </td>
+                                        <td>
+                                            <a href="@Url.Action("Details","Category", new {Id = item.Id })">@item.Name</a>
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.ParentId)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Updated_at)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Slug)
+                                        </td>
+                                        <td>
+                                            @if (item.Status == 1)
+                                            {
+                                                <a href="@Url.Action("Status","Category",new {id = item.Id })" class="btn btn-success btn-sm" title="Hiện"><i class="fas fa-toggle-on"></i></a>
+                                            }
+                                            else
+                                            {
+                                                <a href="@Url.Action("Status","Category",new {id = item.Id })" class="btn btn-secondary btn-sm" title="Ẩn"><i class="fas fa-toggle-off"></i></a>
+                                            }
+                                            <a href="@Url.Action("Edit","Category",new {id = item.Id })" class="btn btn-secondary btn-sm" title="Sửa"><i class="fas fa-edit"></i></a>
+                                            <a href="@Url.Action("delTrash","Category",new {id = item.Id })" class="btn btn-dark btn-sm" title="Xóa"><i class="far fa-trash-alt"></i></a>
+                                        </td>
+
+                                    </tr>  
+                                }
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+        <!-- /.row -->
+    </section>
+    <!-- /.content -->
+</div>
+

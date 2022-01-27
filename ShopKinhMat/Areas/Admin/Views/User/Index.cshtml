@@ -1,0 +1,126 @@
+﻿@model IEnumerable<ShopBanDo.Models.modelUser>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Quản lý User</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="~/Admin/User">User</a></li>
+                        <li class="breadcrumb-item active">Danh sách</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-8">
+                        </div>
+                        <div class="col-4">
+                            <div class="float-right pt-1">
+                                <button type="button" class="btn btn-primary btn-sm">
+                                    <a href="~/Admin/User/Create" class="text-white"><i class="fas fa-plus fa-xs"></i>&nbsp;Thêm mới</a>
+                                </button>
+                                <button type="button" class="btn btn-danger btn-sm">
+                                    <a href="~/Admin/User/Trash" class="text-white"><i class="far fa-trash-alt fa-xs"></i>&nbsp; Thùng rác</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card">
+                    <table id="example1" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>
+                                    ID
+                                </th>
+                                <th>
+                                    Họ và tên
+                                </th>
+                                <th>
+                                    Tên đăng nhập
+                                </th>
+                                <th>
+                                    Mật khẩu
+                                </th>
+                                <th>
+                                    Địa chỉ Email
+                                </th>
+                                <th>
+                                    Giới tính
+                                </th>
+
+                                <th>Công cụ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ID)
+                                    </td>
+                                    <td>
+                                        <a href="@Url.Action("Details","User", new {Id = item.ID })">@item.fullname</a>
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.username)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.password)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.email)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.gender)
+                                    </td>
+                                    <td>
+                                        @if (item.status == 1)
+                                        {
+                                            <p type="button" class="btn btn-success btn-sm" title="On"><a class="text-white" href="~/Admin/User/Status/@item.ID"><i class="fas fa-toggle-on"></i></a></p>
+                                        }
+                                        else
+                                        {
+                                            <p type="button" class="btn btn-secondary btn-sm" title="Off"><a class="text-white" href="~/Admin/User/Status/@item.ID"><i class="fas fa-toggle-off"></i></a></p>
+                                        }
+                                        <p type="button" class="btn btn-secondary btn-sm">
+                                            <a class="text-white" href="@Url.Action("Edit", "User", new { id = item.ID })"><i class="fas fa-edit"></i></a>
+                                        </p>
+                                        <p type="button" class="btn btn-dark btn-sm">
+                                            <a class="text-white" href="@Url.Action("DelTrash", "User", new { id = item.ID })"><i class="fas fa-trash-alt"></i></a>
+                                        </p>
+                                    </td>
+
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+        <!-- /.col -->
+        <!-- /.row -->
+    </section>
+    <!-- /.content -->
+</div>

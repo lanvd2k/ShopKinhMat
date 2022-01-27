@@ -1,0 +1,81 @@
+﻿@model ShopBanDo.Models.modelUser
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1>Chi tiết</h1>
+                    </div>
+                    <div class="col-6">
+                        <div class="float-right pt-1">
+                            <a href="@Url.Action("Index","User")" class="btn btn-danger btn-sm"><i class="fas fa-arrow-circle-left"></i>Trở về</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /.container-fluid -->
+        </section>
+        <!-- Main content -->
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-md-9">
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <div class="form-group">
+                                <label>Tên User</label>
+                                <br />
+                                @Html.Raw(Model.fullname)
+                            </div>
+                            <div class="form-group">
+                                <label>Tên đăng nhập</label>
+                                <br />
+                                @Html.Raw(Model.username)
+                            </div>
+                            <div class="form-group">
+                                <label>Mật khẩu</label>
+                                <br />
+                                @Html.Raw(Model.password)
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            @*bên phải*@
+                            <div class="form-group">
+                                <label>Email</label>
+                                <br />
+                                @Html.Raw(Model.email)
+
+                            </div>
+                            <div class="form-group">
+                                <label>Ngày tạo</label>
+                                <br />
+                                @Html.Raw(Model.created_at)
+
+                            </div>
+                            <div class="form-group">
+                                <label>Người tạo</label>
+                                <br />
+                                @Html.Raw(Model.created_by)
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+        <!-- /.col -->
+    </div>
+}

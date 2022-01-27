@@ -1,0 +1,25 @@
+﻿@model IEnumerable<ShopBanDo.Models.modelCategory>
+@{
+    ViewBag.Title = "Trang Chủ";
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+}
+@Html.Action("Slider", "Module")
+<!-- Banner -->
+@Html.Action("Banner", "Module")
+
+<section class="bg0 p-t-23 p-b-140">
+    @foreach (var cat in Model)
+    {
+        <div class="container">
+            <div class="p-b-10">
+                <h3 class="ltext-103 cl5">
+                    @cat.Name
+                </h3>
+            </div>
+            <div class="row isotope-grid">
+                @Html.Action("ProductHome", "Site", new { catid = cat.Id })
+            </div>
+        </div>
+    }
+</section>
+@Html.Action("Post", "Module")
